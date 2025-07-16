@@ -171,11 +171,13 @@ void zombie_draw(Zombie *z) {
 void zombie_destroy(Zombie *z) {
     // Destroy animations first (they may reference skeletons)
     t3d_anim_destroy(&z->anim_walk); 
+    t3d_anim_destroy(&z->anim_attack); 
     // Then destroy skeletons
     t3d_skeleton_destroy(&z->skel);
+    t3d_skeleton_destroy(&z->skelBlend);
     // Free model matrix
-        free_uncached(z->model_matrix);
-            // Free model
+    free_uncached(z->model_matrix);
+    // Free model
     t3d_model_free(z->model);
 }
 
