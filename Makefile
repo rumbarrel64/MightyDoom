@@ -2,7 +2,7 @@ BUILD_DIR=build
 T3D_INST=$(shell realpath ../..)
 
 include $(N64_INST)/include/n64.mk
-include $(T3D_INST)/t3d.mk
+include $(T3D_INST)/workspace/tiny3d/t3d.mk
 
 N64_CFLAGS += -std=gnu2x -O2
 

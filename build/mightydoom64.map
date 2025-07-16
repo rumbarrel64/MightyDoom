@@ -1,11 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (data_cache_hit_writeback)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (data_cache_hit_writeback)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o) (disable_interrupts)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (fm_sinf)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (fm_sinf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(entrypoint.o)
                               (_start)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o)
@@ -61,7 +61,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(do_ctors.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(entrypoint.o) (__wrap___do_global_ctors)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (rspq_cur_pointer)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (rspq_cur_pointer)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp_queue.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o) (rsp_queue_text_end)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq.o)
@@ -73,9 +73,9 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_rect.o)
                               build/level_update.o (__rdpq_fill_rectangle)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_mode.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (rdpq_mode_blender)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (rdpq_mode_blender)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (rdpq_sprite_upload)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (rdpq_sprite_upload)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tex.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o) (rdpq_tex_upload)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_attach.o)
@@ -151,7 +151,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-s_sin.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(libopus.o) (sin)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-wf_acos.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (acosf)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (acosf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-wf_atan2.o)
                               build/slayer.o (atan2f)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-wf_fmod.o)
@@ -167,13 +167,13 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-sf_sin.o)
                               build/bullets.o (sinf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-sf_tan.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (tanf)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (tanf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-sf_nan.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-wf_acos.o) (nanf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-sf_lrint.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(libopus.o) (lrintf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-sf_round.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (roundf)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (roundf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-k_cos.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-s_sin.o) (__kernel_cos)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a(libm_a-k_sin.o)
@@ -213,7 +213,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-abort.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o) (abort)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-calloc.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (calloc)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (calloc)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-callocr.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-calloc.o) (_calloc_r)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-malloc.o)
@@ -225,7 +225,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-mstats.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o) (mallinfo)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-realloc.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (realloc)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (realloc)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-reallocr.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-realloc.o) (_realloc_r)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-cxa_finalize.o)
@@ -249,7 +249,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-sprint_r.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-vfprintf.o) (__sprint_r)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fclose.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (fclose)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (fclose)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fdopen.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(asset.o) (fdopen)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fflush.o)
@@ -269,7 +269,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fputs.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o) (fputs)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fread.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (fread)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (fread)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fseek.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fopen.o) (_fseek_r)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-ftell.o)
@@ -291,7 +291,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-refill.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-fread.o) (__srefill_r)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-rewind.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (rewind)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (rewind)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-setvbuf.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o) (setvbuf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-snprintf.o)
@@ -303,7 +303,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-vprintf.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp.o) (vprintf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-vsnprintf.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (vsnprintf)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (vsnprintf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-vsprintf.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o) (vsprintf)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-wbuf.o)
@@ -321,7 +321,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-memchr.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o) (memchr)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-memcmp.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (memcmp)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (memcmp)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-memmove.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(mixer.o) (memmove)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-strcat.o)
@@ -399,11 +399,11 @@ Archive member included to satisfy reference by file (symbol)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-strlen.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fat.o) (strlen)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-strcmp.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (strcmp)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (strcmp)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-memset.o)
                               build/camera.o (memset)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-memcpy.o)
-                              /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a (memcpy)
+                              /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a (memcpy)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-__call_atexit.o)
                               /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-cxa_finalize.o) (__call_exitprocs)
 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libc.a(libc_a-div.o)
@@ -591,136 +591,136 @@ Discarded input sections
  .text.zombie_destroy
                 0x00000000       0x40 build/zombie.o
  .MIPS.abiflags
-                0x00000000       0x18 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .reginfo       0x00000000       0x18 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .text          0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x18 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .reginfo       0x00000000       0x18 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .text          0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_quat_slerp
-                0x00000000      0x174 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000      0x174 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_frustum_scale
-                0x00000000       0x3c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x3c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_frustum_vs_aabb
-                0x00000000       0xf8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xf8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_frustum_vs_aabb_s16
-                0x00000000      0x130 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000      0x130 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_frustum_vs_sphere
-                0x00000000       0x68 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x68 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_mat4_ortho
-                0x00000000       0xd8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xd8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_mat4_rot_from_dir
-                0x00000000       0xd0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xd0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_mat4fp_from_srt
-                0x00000000       0x2c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x2c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_mat4_rotate
-                0x00000000       0xf4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xf4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_destroy
-                0x00000000       0x3c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x3c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_matrix_push_pos
-                0x00000000       0x14 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x14 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_light_set_point
-                0x00000000      0x174 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000      0x174 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_vert_pack_normal
-                0x00000000      0x14c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000      0x14c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_state_set_depth_offset
-                0x00000000        0xc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0xc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_state_set_vertex_fx_scale
-                0x00000000        0xc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0xc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_segment_set
-                0x00000000       0x4c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x4c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_fog_set_range
-                0x00000000       0xe0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xe0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_viewport_get
-                0x00000000        0x8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_viewport_set_ortho
-                0x00000000       0x58 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x58 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_viewport_set_view_matrix
-                0x00000000       0x50 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x50 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.bvh_query_node
-                0x00000000       0xd0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xd0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_model_get_object
-                0x00000000       0xbc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xbc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_model_get_animations
-                0x00000000       0x58 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x58 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_model_get_material
-                0x00000000       0xbc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xbc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_model_bvh_query_frustum
-                0x00000000       0x2c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x2c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_debug_print_init
-                0x00000000       0x2c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x2c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_debug_print_start
-                0x00000000       0x78 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x78 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_debug_print
-                0x00000000      0x1e4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000      0x1e4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_debug_printf
-                0x00000000       0x64 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x64 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_skeleton_find_bone
-                0x00000000       0x74 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x74 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.attach_scalar
-                0x00000000       0x80 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x80 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_anim_attach_pos
-                0x00000000       0x20 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x20 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_anim_attach_scale
-                0x00000000       0x24 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x24 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_anim_attach_rot
-                0x00000000       0x64 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x64 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_dmem_set_u32
-                0x00000000       0x48 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x48 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_matrix_stack
-                0x00000000       0x6c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x6c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_particle_draw_generic
-                0x00000000       0xfc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xfc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_state_from_t3d
-                0x00000000       0xec /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xec /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_state_set_scale
-                0x00000000       0xb8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0xb8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_state_set_base_size
-                0x00000000       0x44 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x44 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_state_set_tex_params
-                0x00000000       0x1c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x1c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_particle_draw
-                0x00000000        0x8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_particle_draw_tex
-                0x00000000        0x8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_matrix_set
-                0x00000000       0x10 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x10 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_init
-                0x00000000       0x9c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x9c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_matrix_push
-                0x00000000       0x10 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x10 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_matrix_pop
-                0x00000000       0x18 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x18 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_matrix_push_pos
-                0x00000000       0x14 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x14 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_buffer_swap
-                0x00000000       0x54 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x54 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_buffer_copy
-                0x00000000       0x44 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x44 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.tpx_destroy
-                0x00000000       0x34 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x34 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_light_set_point.str1.8
-                0x00000000       0x35 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x35 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_segment_set.str1.8
-                0x00000000       0x21 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x21 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.__func__.3
-                0x00000000       0x14 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x14 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_debug_print_init.str1.8
-                0x00000000       0x15 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x15 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.tpx_particle_draw_generic.str1.8
-                0x00000000       0x26 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x26 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.tpx_state_from_t3d.str1.8
-                0x00000000       0x1d /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x1d /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .data.rsp_tinypx
-                0x00000000       0x28 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .bss           0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000       0x28 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .bss           0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.ctxBasePtr
-                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .sbss.ctxData  0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .sbss.ctxData  0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.ctxFrustum
-                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.spriteFont
-                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.TPX_RSP_ID
-                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .pdr           0x00000000      0xdc0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .pdr           0x00000000      0xdc0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text          0x00000000        0x0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .data          0x00000000        0x0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .bss           0x00000000        0x0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
@@ -4783,7 +4783,7 @@ LOAD build/music.o
 LOAD build/slayer.o
 LOAD build/tutorial.o
 LOAD build/zombie.o
-LOAD /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+LOAD /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
 LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a
 LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libm.a
 LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a
@@ -5189,171 +5189,171 @@ LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/
                 0x80017240       0x80 build/zombie.o
                 0x80017240                zombie_destroy_all
  .text.t3d_vec3_cross
-                0x800172c0       0x54 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800172c0       0x54 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_vec3_norm
-                0x80017314       0x54 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017314       0x54 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_quat_nlerp
-                0x80017368       0xdc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017368       0xdc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017368                t3d_quat_nlerp
  .text.t3d_mat4_look_at
-                0x80017444      0x130 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017444      0x130 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017444                t3d_mat4_look_at
  .text.t3d_mat4_to_frustum
-                0x80017574       0xb4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017574       0xb4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017574                t3d_mat4_to_frustum
  .text.t3d_mat4_perspective
-                0x80017628       0xb4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017628       0xb4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017628                t3d_mat4_perspective
  .text.t3d_mat4_to_fixed
-                0x800176dc       0xbc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800176dc       0xbc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800176dc                t3d_mat4_to_fixed
  .text.t3d_mat4_to_fixed_3x4
-                0x80017798       0xa8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017798       0xa8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017798                t3d_mat4_to_fixed_3x4
  .text.t3d_mat4_from_srt
-                0x80017840      0x130 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017840      0x130 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017840                t3d_mat4_from_srt
  .text.t3d_mat4_from_srt_euler
-                0x80017970      0x17c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017970      0x17c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017970                t3d_mat4_from_srt_euler
  .text.t3d_mat4fp_from_srt_euler
-                0x80017aec       0x34 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017aec       0x34 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017aec                t3d_mat4fp_from_srt_euler
  .text.t3d_mat4_mul
-                0x80017b20       0x70 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017b20       0x70 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_mat4_mul_vec3
-                0x80017b90       0x50 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017b90       0x50 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_matrix_stack
-                0x80017be0       0x6c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017be0       0x6c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_dmem_set_u16
-                0x80017c4c       0x48 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017c4c       0x48 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_dmem_set_u32
-                0x80017c94       0x44 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017c94       0x44 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_init
-                0x80017cd8       0xc0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017cd8       0xc0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017cd8                t3d_init
  .text.t3d_screen_clear_color
-                0x80017d98       0x24 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017d98       0x24 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017d98                t3d_screen_clear_color
  .text.t3d_screen_clear_depth
-                0x80017dbc       0x24 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017dbc       0x24 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017dbc                t3d_screen_clear_depth
  .text.t3d_matrix_set
-                0x80017de0       0x10 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017de0       0x10 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017de0                t3d_matrix_set
  .text.t3d_matrix_push
-                0x80017df0       0x10 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017df0       0x10 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017df0                t3d_matrix_push
  .text.t3d_matrix_pop
-                0x80017e00       0x18 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017e00       0x18 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017e00                t3d_matrix_pop
  .text.t3d_matrix_set_proj
-                0x80017e18       0x4c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017e18       0x4c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017e18                t3d_matrix_set_proj
  .text.t3d_vert_load
-                0x80017e64       0x84 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017e64       0x84 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017e64                t3d_vert_load
  .text.t3d_frame_start
-                0x80017ee8       0x58 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017ee8       0x58 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017ee8                t3d_frame_start
  .text.t3d_light_set_count
-                0x80017f40        0xc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017f40        0xc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017f40                t3d_light_set_count
  .text.t3d_light_set_ambient
-                0x80017f4c       0x54 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017f4c       0x54 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017f4c                t3d_light_set_ambient
  .text.t3d_light_set_directional
-                0x80017fa0      0x1a0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80017fa0      0x1a0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80017fa0                t3d_light_set_directional
  .text.t3d_state_set_drawflags
-                0x80018140       0x98 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80018140       0x98 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80018140                t3d_state_set_drawflags
  .text.t3d_state_set_vertex_fx
-                0x800181d8       0xb4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800181d8       0xb4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800181d8                t3d_state_set_vertex_fx
  .text.t3d_tri_draw
-                0x8001828c       0xa4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8001828c       0xa4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8001828c                t3d_tri_draw
  .text.t3d_tri_draw_strip
-                0x80018330       0xa8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80018330       0xa8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80018330                t3d_tri_draw_strip
  .text.t3d_viewport_attach
-                0x800183d8      0x37c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800183d8      0x37c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800183d8                t3d_viewport_attach
  .text.t3d_viewport_set_perspective
-                0x80018754       0x4c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80018754       0x4c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80018754                t3d_viewport_set_perspective
  .text.t3d_viewport_set_projection
-                0x800187a0       0x40 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800187a0       0x40 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800187a0                t3d_viewport_set_projection
  .text.t3d_viewport_look_at
-                0x800187e0       0x58 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800187e0       0x58 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800187e0                t3d_viewport_look_at
  .text.t3d_viewport_calc_viewspace_pos
-                0x80018838      0x120 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80018838      0x120 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80018838                t3d_viewport_calc_viewspace_pos
  .text.t3d_indexbuffer_convert
-                0x80018958       0x58 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80018958       0x58 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80018958                t3d_indexbuffer_convert
  .text.set_texture
-                0x800189b0      0x2d4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800189b0      0x2d4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.texture_cache_free
-                0x80018c84       0x74 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80018c84       0x74 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_model_load
-                0x80018cf8      0x3fc /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80018cf8      0x3fc /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80018cf8                t3d_model_load
  .text.t3d_model_draw_object
-                0x800190f4      0x20c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800190f4      0x20c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800190f4                t3d_model_draw_object
  .text.t3d_model_draw_material
-                0x80019300      0x368 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019300      0x368 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019300                t3d_model_draw_material
  .text.t3d_model_free
-                0x80019668      0x174 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019668      0x174 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019668                t3d_model_free
  .text.t3d_model_get_animation
-                0x800197dc       0xb4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800197dc       0xb4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800197dc                t3d_model_get_animation
  .text.t3d_model_iter_next
-                0x80019890       0x68 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019890       0x68 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019890                t3d_model_iter_next
  .text.t3d_model_draw_custom
-                0x800198f8      0x100 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800198f8      0x100 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800198f8                t3d_model_draw_custom
  .text.t3d_skeleton_clone
-                0x800199f8       0xd0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800199f8       0xd0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x800199f8                t3d_skeleton_clone
  .text.t3d_skeleton_reset
-                0x80019ac8       0xa0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019ac8       0xa0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019ac8                t3d_skeleton_reset
  .text.t3d_skeleton_create_buffered
-                0x80019b68      0x108 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019b68      0x108 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019b68                t3d_skeleton_create_buffered
  .text.t3d_skeleton_blend
-                0x80019c70      0x150 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019c70      0x150 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019c70                t3d_skeleton_blend
  .text.t3d_skeleton_update
-                0x80019dc0      0x23c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019dc0      0x23c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019dc0                t3d_skeleton_update
  .text.t3d_skeleton_destroy
-                0x80019ffc       0x50 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80019ffc       0x50 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80019ffc                t3d_skeleton_destroy
  .text.rewind_anim
-                0x8001a04c       0x74 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8001a04c       0x74 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .text.t3d_anim_create
-                0x8001a0c0       0xb4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8001a0c0       0xb4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8001a0c0                t3d_anim_create
  .text.t3d_anim_attach
-                0x8001a174      0x1a4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8001a174      0x1a4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8001a174                t3d_anim_attach
  .text.t3d_anim_update
-                0x8001a318      0x384 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8001a318      0x384 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8001a318                t3d_anim_update
  .text.t3d_anim_destroy
-                0x8001a69c       0x50 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8001a69c       0x50 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8001a69c                t3d_anim_destroy
  .text.t3d_anim_set_time
-                0x8001a6ec       0x60 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8001a6ec       0x60 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8001a6ec                t3d_anim_set_time
  *fill*         0x8001a74c       0x14 
  .text.data_cache_hit_writeback
@@ -6747,31 +6747,31 @@ LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/
  .rodata.zombie_init.str1.8
                 0x800506e0       0x2e build/zombie.o
  .rodata.t3d_light_set_directional.str1.8
-                0x800506e0       0x5b /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800506e0       0x5b /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_state_set_drawflags.str1.8
-                0x800506e0       0x19 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800506e0       0x19 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_viewport_attach.str1.8
-                0x800506e0      0x14a /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800506e0      0x14a /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.__func__.0
-                0x800506e0       0x72 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800506e0       0x72 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  *fill*         0x80050752        0x6 
  .rodata.__func__.1
-                0x80050758       0x33 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80050758       0x33 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  *fill*         0x8005078b        0x5 
  .rodata.__func__.2
-                0x80050790       0x18 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x80050790       0x18 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.__func__.4
-                0x800507a8       0x1a /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800507a8       0x1a /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.str1.8
-                0x800507c2       0x33 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800507c2       0x33 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_model_load.str1.8
-                0x800507c2       0xe7 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800507c2       0xe7 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_skeleton_create_buffered.str1.8
-                0x800507c2       0x26 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800507c2       0x26 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_anim_create.str1.8
-                0x800507c2       0x42 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800507c2       0x42 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.t3d_anim_attach.str1.8
-                0x800507c2       0x24 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x800507c2       0x24 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .rodata.malloc_uncached_aligned.str1.8
                 0x800507c2       0x3d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  *fill*         0x800507c2        0x6 
@@ -7747,7 +7747,7 @@ LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/
 .data           0x80052bb0     0x8a10
                 0x80052bb0                        __data_start = .
  *(.data)
- .data          0x80052bb0     0x4941 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+ .data          0x80052bb0     0x4941 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x80052bb0                rsp_tiny3d_text_start
                 0x80053b80                rsp_tiny3d_text_end
                 0x80053b80                rsp_tiny3d_data_start
@@ -7811,10 +7811,10 @@ LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/
  *(.data.*)
  *fill*         0x8005a5ac        0x4 
  .data.rsp_tiny3d_clipping
-                0x8005a5b0       0x28 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005a5b0       0x28 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8005a5b0                rsp_tiny3d_clipping
  .data.rsp_tiny3d
-                0x8005a5d8       0x28 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005a5d8       0x28 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8005a5d8                rsp_tiny3d
  .data.dragon_fs
                 0x8005a600       0x34 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dragonfs.o)
@@ -7887,7 +7887,7 @@ LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/
  *fill*         0x8005b67c        0x4 
  .sdata         0x8005b680       0x40 build/tutorial.o
  .sdata         0x8005b6c0       0x40 build/zombie.o
- .sdata         0x8005b700       0xac /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+ .sdata         0x8005b700       0xac /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sdata         0x8005b7ac       0x44 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
  .sdata         0x8005b7f0       0x3c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(display.o)
  *fill*         0x8005b82c        0x4 
@@ -8017,16 +8017,16 @@ LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/
                 0x8005bba4        0x4 build/tutorial.o
                 0x8005bba4                level_start_time
  .sbss.matrixStack
-                0x8005bba8        0x8 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005bba8        0x8 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.currentViewport
-                0x8005bbb0        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005bbb0        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.T3D_RSP_ID
-                0x8005bbb4        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005bbb4        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
                 0x8005bbb4                T3D_RSP_ID
  .sbss.textureCache
-                0x8005bbb8        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005bbb8        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.textureCacheSize
-                0x8005bbbc        0x4 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005bbbc        0x4 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .sbss.ticks64_base
                 0x8005bbc0        0x8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .sbss.ticks64_base_tick
@@ -8437,7 +8437,7 @@ LOAD /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/
                 0x8005bfe0       0x2c build/music.o
  *fill*         0x8005c00c        0x4 
  .bss.dummyState
-                0x8005c010       0x40 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x8005c010       0x40 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .bss.__prenmi_handlers
                 0x8005c050       0x10 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
  .bss.debug_writer
@@ -8601,7 +8601,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .gnu.attributes
                 0x000000e0       0x10 build/zombie.o
  .gnu.attributes
-                0x000000f0       0x10 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x000000f0       0x10 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .gnu.attributes
                 0x00000100       0x10 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .gnu.attributes
@@ -8949,7 +8949,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .mdebug.abiO64
                 0x00000000        0x0 build/zombie.o
  .mdebug.abiO64
-                0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .mdebug.abiO64
                 0x00000000        0x0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .mdebug.abiO64
@@ -9286,7 +9286,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .gcc_compiled_long32
                 0x00000000        0x0 build/zombie.o
  .gcc_compiled_long32
-                0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000000        0x0 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .gcc_compiled_long32
                 0x00000000        0x0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .gcc_compiled_long32
@@ -9608,7 +9608,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .comment       0x00000012       0x13 build/slayer.o
  .comment       0x00000012       0x13 build/tutorial.o
  .comment       0x00000012       0x13 build/zombie.o
- .comment       0x00000012       0x85 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+ .comment       0x00000012       0x85 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .comment       0x00000012       0x13 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .comment       0x00000012       0x13 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
  .comment       0x00000012       0x13 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
@@ -9791,11 +9791,11 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_gdb_scripts
                 0x00000400      0x400 build/zombie.o
  .debug_gdb_scripts
-                0x00000400     0x1c00 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000400     0x1c00 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .debug_gdb_scripts
                 0x00000400      0x400 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dlfcn.o)
 
-.debug_info     0x00000000    0x7ba90
+.debug_info     0x00000000    0x7ba9a
  .debug_info    0x00000000      0xe91 build/banners.o
  .debug_info    0x00000e91     0x1d21 build/bullets.o
  .debug_info    0x00002bb2      0x770 build/camera.o
@@ -9806,122 +9806,122 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_info    0x000056e1      0xf89 build/map.o
  .debug_info    0x0000666a     0x106d build/menu.o
  .debug_info    0x000076d7      0x6d4 build/music.o
- .debug_info    0x00007dab     0x28e4 build/slayer.o
- .debug_info    0x0000a68f     0x316d build/tutorial.o
- .debug_info    0x0000d7fc     0x27bc build/zombie.o
- .debug_info    0x0000ffb8     0xbd8b /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .debug_info    0x0001bd43     0x1aaf /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
- .debug_info    0x0001d7f2     0x2ff8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
- .debug_info    0x000207ea      0xb55 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
- .debug_info    0x0002133f     0x20c8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o)
- .debug_info    0x00023407     0x2995 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(usb.o)
- .debug_info    0x00025d9c     0x2991 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dragonfs.o)
- .debug_info    0x0002872d      0xb54 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(audio.o)
- .debug_info    0x00029281     0x2357 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(display.o)
- .debug_info    0x0002b5d8      0x66f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(surface.o)
- .debug_info    0x0002bc47     0x2834 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(asset.o)
- .debug_info    0x0002e47b      0xacf /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(lz4_dec.o)
- .debug_info    0x0002ef4a      0x39a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(ringbuf.o)
- .debug_info    0x0002f2e4     0x1b46 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(aplib_dec.o)
- .debug_info    0x00030e2a     0x35ba /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad.o)
- .debug_info    0x000343e4     0x1f36 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad_accessory.o)
- .debug_info    0x0003631a     0x255f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp.o)
- .debug_info    0x00038879     0x362b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(inspector.o)
- .debug_info    0x0003bea4     0x1610 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(sprite.o)
- .debug_info    0x0003d4b4      0xf3b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dma.o)
- .debug_info    0x0003e3ef      0xdd0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(timer.o)
- .debug_info    0x0003f1bf     0x1e2b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(exception.o)
- .debug_info    0x00040fea      0x2fd /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(do_ctors.o)
- .debug_info    0x000412e7     0x4863 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o)
- .debug_info    0x00045b4a     0x51ca /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq.o)
- .debug_info    0x0004ad14     0x5f4a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o)
- .debug_info    0x00050c5e     0x16d4 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_rect.o)
- .debug_info    0x00052332     0x1a97 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_mode.o)
- .debug_info    0x00053dc9     0x12fc /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o)
- .debug_info    0x000550c5     0x4ef0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tex.o)
- .debug_info    0x00059fb5     0x15cb /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_attach.o)
- .debug_info    0x0005b580     0x3d4d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_font.o)
- .debug_info    0x0005f2cd      0xb10 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_text.o)
- .debug_info    0x0005fddd     0x2494 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_paragraph.o)
- .debug_info    0x00062271     0x274a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dlfcn.o)
- .debug_info    0x000649bb     0x38ad /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kernel.o)
- .debug_info    0x00068268      0xdd8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kirq.o)
- .debug_info    0x00069040     0x2b0e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(mixer.o)
- .debug_info    0x0006bb4e      0x9f2 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(samplebuffer.o)
- .debug_info    0x0006c540      0xf8f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64.o)
- .debug_info    0x0006d4cf      0xb46 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64_vadpcm.o)
- .debug_info    0x0006e015     0x26b7 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(backtrace.o)
- .debug_info    0x000706cc      0x3fd /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rompak.o)
- .debug_info    0x00070ac9     0x112c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(console.o)
- .debug_info    0x00071bf5     0x12e6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus.o)
- .debug_info    0x00072edb      0xb02 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus_accessory.o)
- .debug_info    0x000739dd     0x25f3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(graphics.o)
- .debug_info    0x00075fd0     0x2cbe /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tri.o)
- .debug_info    0x00078c8e     0x2e02 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a(system.o)
+ .debug_info    0x00007dab     0x28e6 build/slayer.o
+ .debug_info    0x0000a691     0x3170 build/tutorial.o
+ .debug_info    0x0000d801     0x27be build/zombie.o
+ .debug_info    0x0000ffbf     0xbd8e /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .debug_info    0x0001bd4d     0x1aaf /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
+ .debug_info    0x0001d7fc     0x2ff8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
+ .debug_info    0x000207f4      0xb55 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
+ .debug_info    0x00021349     0x20c8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o)
+ .debug_info    0x00023411     0x2995 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(usb.o)
+ .debug_info    0x00025da6     0x2991 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dragonfs.o)
+ .debug_info    0x00028737      0xb54 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(audio.o)
+ .debug_info    0x0002928b     0x2357 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(display.o)
+ .debug_info    0x0002b5e2      0x66f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(surface.o)
+ .debug_info    0x0002bc51     0x2834 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(asset.o)
+ .debug_info    0x0002e485      0xacf /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(lz4_dec.o)
+ .debug_info    0x0002ef54      0x39a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(ringbuf.o)
+ .debug_info    0x0002f2ee     0x1b46 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(aplib_dec.o)
+ .debug_info    0x00030e34     0x35ba /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad.o)
+ .debug_info    0x000343ee     0x1f36 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad_accessory.o)
+ .debug_info    0x00036324     0x255f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp.o)
+ .debug_info    0x00038883     0x362b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(inspector.o)
+ .debug_info    0x0003beae     0x1610 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(sprite.o)
+ .debug_info    0x0003d4be      0xf3b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dma.o)
+ .debug_info    0x0003e3f9      0xdd0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(timer.o)
+ .debug_info    0x0003f1c9     0x1e2b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(exception.o)
+ .debug_info    0x00040ff4      0x2fd /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(do_ctors.o)
+ .debug_info    0x000412f1     0x4863 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o)
+ .debug_info    0x00045b54     0x51ca /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq.o)
+ .debug_info    0x0004ad1e     0x5f4a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o)
+ .debug_info    0x00050c68     0x16d4 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_rect.o)
+ .debug_info    0x0005233c     0x1a97 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_mode.o)
+ .debug_info    0x00053dd3     0x12fc /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o)
+ .debug_info    0x000550cf     0x4ef0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tex.o)
+ .debug_info    0x00059fbf     0x15cb /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_attach.o)
+ .debug_info    0x0005b58a     0x3d4d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_font.o)
+ .debug_info    0x0005f2d7      0xb10 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_text.o)
+ .debug_info    0x0005fde7     0x2494 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_paragraph.o)
+ .debug_info    0x0006227b     0x274a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dlfcn.o)
+ .debug_info    0x000649c5     0x38ad /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kernel.o)
+ .debug_info    0x00068272      0xdd8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kirq.o)
+ .debug_info    0x0006904a     0x2b0e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(mixer.o)
+ .debug_info    0x0006bb58      0x9f2 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(samplebuffer.o)
+ .debug_info    0x0006c54a      0xf8f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64.o)
+ .debug_info    0x0006d4d9      0xb46 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64_vadpcm.o)
+ .debug_info    0x0006e01f     0x26b7 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(backtrace.o)
+ .debug_info    0x000706d6      0x3fd /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rompak.o)
+ .debug_info    0x00070ad3     0x112c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(console.o)
+ .debug_info    0x00071bff     0x12e6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus.o)
+ .debug_info    0x00072ee5      0xb02 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus_accessory.o)
+ .debug_info    0x000739e7     0x25f3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(graphics.o)
+ .debug_info    0x00075fda     0x2cbe /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tri.o)
+ .debug_info    0x00078c98     0x2e02 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a(system.o)
 
-.debug_abbrev   0x00000000    0x13ef0
- .debug_abbrev  0x00000000      0x2d0 build/banners.o
- .debug_abbrev  0x000002d0      0x3d4 build/bullets.o
- .debug_abbrev  0x000006a4      0x275 build/camera.o
- .debug_abbrev  0x00000919      0x162 build/collision.o
- .debug_abbrev  0x00000a7b      0x40b build/level_update.o
- .debug_abbrev  0x00000e86      0x13a build/levels.o
- .debug_abbrev  0x00000fc0      0x270 build/main.o
- .debug_abbrev  0x00001230      0x333 build/map.o
- .debug_abbrev  0x00001563      0x417 build/menu.o
- .debug_abbrev  0x0000197a      0x21e build/music.o
- .debug_abbrev  0x00001b98      0x54c build/slayer.o
- .debug_abbrev  0x000020e4      0x56e build/tutorial.o
- .debug_abbrev  0x00002652      0x536 build/zombie.o
- .debug_abbrev  0x00002b88     0x2279 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .debug_abbrev  0x00004e01      0x652 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
- .debug_abbrev  0x00005453      0x56f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
- .debug_abbrev  0x000059c2      0x2b7 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
- .debug_abbrev  0x00005c79      0x685 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o)
- .debug_abbrev  0x000062fe      0x46a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(usb.o)
- .debug_abbrev  0x00006768      0x52d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dragonfs.o)
- .debug_abbrev  0x00006c95      0x47e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(audio.o)
- .debug_abbrev  0x00007113      0x76a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(display.o)
- .debug_abbrev  0x0000787d      0x279 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(surface.o)
- .debug_abbrev  0x00007af6      0x5b6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(asset.o)
- .debug_abbrev  0x000080ac      0x40f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(lz4_dec.o)
- .debug_abbrev  0x000084bb      0x1c3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(ringbuf.o)
- .debug_abbrev  0x0000867e      0x4be /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(aplib_dec.o)
- .debug_abbrev  0x00008b3c      0x69a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad.o)
- .debug_abbrev  0x000091d6      0x413 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad_accessory.o)
- .debug_abbrev  0x000095e9      0x672 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp.o)
- .debug_abbrev  0x00009c5b      0x765 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(inspector.o)
- .debug_abbrev  0x0000a3c0      0x3bc /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(sprite.o)
- .debug_abbrev  0x0000a77c      0x376 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dma.o)
- .debug_abbrev  0x0000aaf2      0x47d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(timer.o)
- .debug_abbrev  0x0000af6f      0x68b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(exception.o)
- .debug_abbrev  0x0000b5fa      0x162 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(do_ctors.o)
- .debug_abbrev  0x0000b75c      0x7fc /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o)
- .debug_abbrev  0x0000bf58      0x6c2 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq.o)
- .debug_abbrev  0x0000c61a      0x7c5 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o)
- .debug_abbrev  0x0000cddf      0x355 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_rect.o)
- .debug_abbrev  0x0000d134      0x4f3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_mode.o)
- .debug_abbrev  0x0000d627      0x481 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o)
- .debug_abbrev  0x0000daa8      0x604 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tex.o)
- .debug_abbrev  0x0000e0ac      0x49d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_attach.o)
- .debug_abbrev  0x0000e549      0x777 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_font.o)
- .debug_abbrev  0x0000ecc0      0x2e1 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_text.o)
- .debug_abbrev  0x0000efa1      0x5be /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_paragraph.o)
- .debug_abbrev  0x0000f55f      0x6b8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dlfcn.o)
- .debug_abbrev  0x0000fc17      0x7e9 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kernel.o)
- .debug_abbrev  0x00010400      0x306 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kirq.o)
- .debug_abbrev  0x00010706      0x7c4 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(mixer.o)
- .debug_abbrev  0x00010eca      0x298 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(samplebuffer.o)
- .debug_abbrev  0x00011162      0x39c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64.o)
- .debug_abbrev  0x000114fe      0x3f4 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64_vadpcm.o)
- .debug_abbrev  0x000118f2      0x686 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(backtrace.o)
- .debug_abbrev  0x00011f78      0x227 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rompak.o)
- .debug_abbrev  0x0001219f      0x474 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(console.o)
- .debug_abbrev  0x00012613      0x53f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus.o)
- .debug_abbrev  0x00012b52      0x329 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus_accessory.o)
- .debug_abbrev  0x00012e7b      0x516 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(graphics.o)
- .debug_abbrev  0x00013391      0x45e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tri.o)
- .debug_abbrev  0x000137ef      0x701 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a(system.o)
+.debug_abbrev   0x00000000    0x13ef4
+ .debug_abbrev  0x00000000      0x2d1 build/banners.o
+ .debug_abbrev  0x000002d1      0x3d5 build/bullets.o
+ .debug_abbrev  0x000006a6      0x275 build/camera.o
+ .debug_abbrev  0x0000091b      0x162 build/collision.o
+ .debug_abbrev  0x00000a7d      0x40b build/level_update.o
+ .debug_abbrev  0x00000e88      0x13a build/levels.o
+ .debug_abbrev  0x00000fc2      0x270 build/main.o
+ .debug_abbrev  0x00001232      0x334 build/map.o
+ .debug_abbrev  0x00001566      0x417 build/menu.o
+ .debug_abbrev  0x0000197d      0x21e build/music.o
+ .debug_abbrev  0x00001b9b      0x54c build/slayer.o
+ .debug_abbrev  0x000020e7      0x56e build/tutorial.o
+ .debug_abbrev  0x00002655      0x536 build/zombie.o
+ .debug_abbrev  0x00002b8b     0x227a /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .debug_abbrev  0x00004e05      0x652 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
+ .debug_abbrev  0x00005457      0x56f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
+ .debug_abbrev  0x000059c6      0x2b7 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
+ .debug_abbrev  0x00005c7d      0x685 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o)
+ .debug_abbrev  0x00006302      0x46a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(usb.o)
+ .debug_abbrev  0x0000676c      0x52d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dragonfs.o)
+ .debug_abbrev  0x00006c99      0x47e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(audio.o)
+ .debug_abbrev  0x00007117      0x76a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(display.o)
+ .debug_abbrev  0x00007881      0x279 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(surface.o)
+ .debug_abbrev  0x00007afa      0x5b6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(asset.o)
+ .debug_abbrev  0x000080b0      0x40f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(lz4_dec.o)
+ .debug_abbrev  0x000084bf      0x1c3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(ringbuf.o)
+ .debug_abbrev  0x00008682      0x4be /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(aplib_dec.o)
+ .debug_abbrev  0x00008b40      0x69a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad.o)
+ .debug_abbrev  0x000091da      0x413 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad_accessory.o)
+ .debug_abbrev  0x000095ed      0x672 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp.o)
+ .debug_abbrev  0x00009c5f      0x765 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(inspector.o)
+ .debug_abbrev  0x0000a3c4      0x3bc /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(sprite.o)
+ .debug_abbrev  0x0000a780      0x376 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dma.o)
+ .debug_abbrev  0x0000aaf6      0x47d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(timer.o)
+ .debug_abbrev  0x0000af73      0x68b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(exception.o)
+ .debug_abbrev  0x0000b5fe      0x162 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(do_ctors.o)
+ .debug_abbrev  0x0000b760      0x7fc /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o)
+ .debug_abbrev  0x0000bf5c      0x6c2 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq.o)
+ .debug_abbrev  0x0000c61e      0x7c5 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o)
+ .debug_abbrev  0x0000cde3      0x355 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_rect.o)
+ .debug_abbrev  0x0000d138      0x4f3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_mode.o)
+ .debug_abbrev  0x0000d62b      0x481 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o)
+ .debug_abbrev  0x0000daac      0x604 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tex.o)
+ .debug_abbrev  0x0000e0b0      0x49d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_attach.o)
+ .debug_abbrev  0x0000e54d      0x777 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_font.o)
+ .debug_abbrev  0x0000ecc4      0x2e1 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_text.o)
+ .debug_abbrev  0x0000efa5      0x5be /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_paragraph.o)
+ .debug_abbrev  0x0000f563      0x6b8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dlfcn.o)
+ .debug_abbrev  0x0000fc1b      0x7e9 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kernel.o)
+ .debug_abbrev  0x00010404      0x306 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kirq.o)
+ .debug_abbrev  0x0001070a      0x7c4 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(mixer.o)
+ .debug_abbrev  0x00010ece      0x298 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(samplebuffer.o)
+ .debug_abbrev  0x00011166      0x39c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64.o)
+ .debug_abbrev  0x00011502      0x3f4 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64_vadpcm.o)
+ .debug_abbrev  0x000118f6      0x686 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(backtrace.o)
+ .debug_abbrev  0x00011f7c      0x227 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rompak.o)
+ .debug_abbrev  0x000121a3      0x474 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(console.o)
+ .debug_abbrev  0x00012617      0x53f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus.o)
+ .debug_abbrev  0x00012b56      0x329 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus_accessory.o)
+ .debug_abbrev  0x00012e7f      0x516 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(graphics.o)
+ .debug_abbrev  0x00013395      0x45e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tri.o)
+ .debug_abbrev  0x000137f3      0x701 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a(system.o)
 
 .debug_loclists
                 0x00000000    0x3fd2b
@@ -9950,7 +9950,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_loclists
                 0x00001101      0x71c build/zombie.o
  .debug_loclists
-                0x0000181d     0x595c /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x0000181d     0x595c /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .debug_loclists
                 0x00007179      0xa24 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .debug_loclists
@@ -10076,7 +10076,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_aranges
                 0x00000208       0x58 build/zombie.o
  .debug_aranges
-                0x00000260      0x418 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000260      0x418 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .debug_aranges
                 0x00000678      0x110 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .debug_aranges
@@ -10201,7 +10201,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_rnglists
                 0x0000038b       0xde build/zombie.o
  .debug_rnglists
-                0x00000469      0xc7b /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+                0x00000469      0xc7b /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .debug_rnglists
                 0x000010e4      0x1cb /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .debug_rnglists
@@ -10299,69 +10299,69 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_rnglists
                 0x00008afe      0x3ca /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a(system.o)
 
-.debug_line     0x00000000    0x3b308
- .debug_line    0x00000000      0x246 build/banners.o
- .debug_line    0x00000246      0x497 build/bullets.o
- .debug_line    0x000006dd      0x27b build/camera.o
- .debug_line    0x00000958      0x151 build/collision.o
- .debug_line    0x00000aa9      0x3ec build/level_update.o
- .debug_line    0x00000e95      0x11e build/levels.o
- .debug_line    0x00000fb3      0x23c build/main.o
- .debug_line    0x000011ef      0x2a6 build/map.o
- .debug_line    0x00001495      0x326 build/menu.o
- .debug_line    0x000017bb      0x1c1 build/music.o
- .debug_line    0x0000197c      0x7b4 build/slayer.o
- .debug_line    0x00002130      0xae0 build/tutorial.o
- .debug_line    0x00002c10      0x8fb build/zombie.o
- .debug_line    0x0000350b     0x4faf /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
- .debug_line    0x000084ba      0xbe5 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
- .debug_line    0x0000909f     0x1bef /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
- .debug_line    0x0000ac8e      0x91f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
- .debug_line    0x0000b5ad      0xae8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o)
- .debug_line    0x0000c095     0x168a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(usb.o)
- .debug_line    0x0000d71f     0x14d8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dragonfs.o)
- .debug_line    0x0000ebf7      0xaac /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(audio.o)
- .debug_line    0x0000f6a3     0x144c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(display.o)
- .debug_line    0x00010aef      0x37f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(surface.o)
- .debug_line    0x00010e6e      0xd60 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(asset.o)
- .debug_line    0x00011bce      0x750 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(lz4_dec.o)
- .debug_line    0x0001231e      0x31a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(ringbuf.o)
- .debug_line    0x00012638     0x1e15 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(aplib_dec.o)
- .debug_line    0x0001444d     0x1970 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad.o)
- .debug_line    0x00015dbd     0x125f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad_accessory.o)
- .debug_line    0x0001701c      0xfa7 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp.o)
- .debug_line    0x00017fc3     0x183c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(inspector.o)
- .debug_line    0x000197ff      0xb77 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(sprite.o)
- .debug_line    0x0001a376      0xbd0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dma.o)
- .debug_line    0x0001af46      0x7f6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(timer.o)
- .debug_line    0x0001b73c      0xeca /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(exception.o)
- .debug_line    0x0001c606      0x1c1 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(do_ctors.o)
- .debug_line    0x0001c7c7     0x1f34 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o)
- .debug_line    0x0001e6fb     0x2a53 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq.o)
- .debug_line    0x0002114e     0x3f84 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o)
- .debug_line    0x000250d2      0xf5d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_rect.o)
- .debug_line    0x0002602f      0xdb3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_mode.o)
- .debug_line    0x00026de2      0x65b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o)
- .debug_line    0x0002743d     0x2b41 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tex.o)
- .debug_line    0x00029f7e      0x84b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_attach.o)
- .debug_line    0x0002a7c9     0x18df /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_font.o)
- .debug_line    0x0002c0a8      0x38e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_text.o)
- .debug_line    0x0002c436     0x19d2 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_paragraph.o)
- .debug_line    0x0002de08     0x10b3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dlfcn.o)
- .debug_line    0x0002eebb     0x1de0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kernel.o)
- .debug_line    0x00030c9b      0x2a6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kirq.o)
- .debug_line    0x00030f41     0x1671 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(mixer.o)
- .debug_line    0x000325b2      0x6a6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(samplebuffer.o)
- .debug_line    0x00032c58      0x77e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64.o)
- .debug_line    0x000333d6      0x4f5 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64_vadpcm.o)
- .debug_line    0x000338cb     0x1187 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(backtrace.o)
- .debug_line    0x00034a52      0x2a0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rompak.o)
- .debug_line    0x00034cf2      0x681 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(console.o)
- .debug_line    0x00035373      0x571 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus.o)
- .debug_line    0x000358e4      0x7ab /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus_accessory.o)
- .debug_line    0x0003608f     0x1a25 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(graphics.o)
- .debug_line    0x00037ab4     0x1b56 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tri.o)
- .debug_line    0x0003960a     0x1cfe /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a(system.o)
+.debug_line     0x00000000    0x3b2dc
+ .debug_line    0x00000000      0x242 build/banners.o
+ .debug_line    0x00000242      0x493 build/bullets.o
+ .debug_line    0x000006d5      0x277 build/camera.o
+ .debug_line    0x0000094c      0x14d build/collision.o
+ .debug_line    0x00000a99      0x3e8 build/level_update.o
+ .debug_line    0x00000e81      0x11a build/levels.o
+ .debug_line    0x00000f9b      0x238 build/main.o
+ .debug_line    0x000011d3      0x2a2 build/map.o
+ .debug_line    0x00001475      0x326 build/menu.o
+ .debug_line    0x0000179b      0x1c1 build/music.o
+ .debug_line    0x0000195c      0x7b0 build/slayer.o
+ .debug_line    0x0000210c      0xadc build/tutorial.o
+ .debug_line    0x00002be8      0x8f7 build/zombie.o
+ .debug_line    0x000034df     0x4faf /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
+ .debug_line    0x0000848e      0xbe5 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
+ .debug_line    0x00009073     0x1bef /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
+ .debug_line    0x0000ac62      0x91f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
+ .debug_line    0x0000b581      0xae8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(debug.o)
+ .debug_line    0x0000c069     0x168a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(usb.o)
+ .debug_line    0x0000d6f3     0x14d8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dragonfs.o)
+ .debug_line    0x0000ebcb      0xaac /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(audio.o)
+ .debug_line    0x0000f677     0x144c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(display.o)
+ .debug_line    0x00010ac3      0x37f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(surface.o)
+ .debug_line    0x00010e42      0xd60 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(asset.o)
+ .debug_line    0x00011ba2      0x750 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(lz4_dec.o)
+ .debug_line    0x000122f2      0x31a /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(ringbuf.o)
+ .debug_line    0x0001260c     0x1e15 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(aplib_dec.o)
+ .debug_line    0x00014421     0x1970 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad.o)
+ .debug_line    0x00015d91     0x125f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joypad_accessory.o)
+ .debug_line    0x00016ff0      0xfa7 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rsp.o)
+ .debug_line    0x00017f97     0x183c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(inspector.o)
+ .debug_line    0x000197d3      0xb77 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(sprite.o)
+ .debug_line    0x0001a34a      0xbd0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dma.o)
+ .debug_line    0x0001af1a      0x7f6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(timer.o)
+ .debug_line    0x0001b710      0xeca /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(exception.o)
+ .debug_line    0x0001c5da      0x1c1 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(do_ctors.o)
+ .debug_line    0x0001c79b     0x1f34 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rspq.o)
+ .debug_line    0x0001e6cf     0x2a53 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq.o)
+ .debug_line    0x00021122     0x3f84 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_debug.o)
+ .debug_line    0x000250a6      0xf5d /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_rect.o)
+ .debug_line    0x00026003      0xdb3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_mode.o)
+ .debug_line    0x00026db6      0x65b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_sprite.o)
+ .debug_line    0x00027411     0x2b41 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tex.o)
+ .debug_line    0x00029f52      0x84b /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_attach.o)
+ .debug_line    0x0002a79d     0x18df /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_font.o)
+ .debug_line    0x0002c07c      0x38e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_text.o)
+ .debug_line    0x0002c40a     0x19d2 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_paragraph.o)
+ .debug_line    0x0002dddc     0x10b3 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(dlfcn.o)
+ .debug_line    0x0002ee8f     0x1de0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kernel.o)
+ .debug_line    0x00030c6f      0x2a6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(kirq.o)
+ .debug_line    0x00030f15     0x1671 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(mixer.o)
+ .debug_line    0x00032586      0x6a6 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(samplebuffer.o)
+ .debug_line    0x00032c2c      0x77e /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64.o)
+ .debug_line    0x000333aa      0x4f5 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(wav64_vadpcm.o)
+ .debug_line    0x0003389f     0x1187 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(backtrace.o)
+ .debug_line    0x00034a26      0x2a0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rompak.o)
+ .debug_line    0x00034cc6      0x681 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(console.o)
+ .debug_line    0x00035347      0x571 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus.o)
+ .debug_line    0x000358b8      0x7ab /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(joybus_accessory.o)
+ .debug_line    0x00036063     0x1a25 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(graphics.o)
+ .debug_line    0x00037a88     0x1b56 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(rdpq_tri.o)
+ .debug_line    0x000395de     0x1cfe /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragonsys.a(system.o)
 
 .debug_str      0x00000000     0xd9bb
  .debug_str     0x00000000     0xd9bb build/banners.o
@@ -10378,7 +10378,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_str     0x0000d9bb     0x18ae build/slayer.o
  .debug_str     0x0000d9bb     0x1ce8 build/tutorial.o
  .debug_str     0x0000d9bb     0x17c1 build/zombie.o
- .debug_str     0x0000d9bb     0x61b5 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+ .debug_str     0x0000d9bb     0x61b5 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .debug_str     0x0000d9bb      0x7c4 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .debug_str     0x0000d9bb      0xf90 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
  .debug_str     0x0000d9bb      0x27f /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
@@ -10441,7 +10441,7 @@ OUTPUT(build/mightydoom64.elf elf32-bigmips)
  .debug_frame   0x0000036c       0xe4 build/slayer.o
  .debug_frame   0x00000450       0x80 build/tutorial.o
  .debug_frame   0x000004d0      0x17c build/zombie.o
- .debug_frame   0x0000064c      0xd88 /mnt/c/Users/lesli/workspace/tiny3d_Rum//build/libt3d.a
+ .debug_frame   0x0000064c      0xd88 /mnt/c/Users/lesli/workspace/tiny3d//build/libt3d.a
  .debug_frame   0x000013d4      0x23c /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(n64sys.o)
  .debug_frame   0x00001610      0x5d0 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(interrupt.o)
  .debug_frame   0x00001be0       0xf8 /opt/libdragon/bin/../lib/gcc/mips64-elf/14.2.0/../../../../mips64-elf/lib/libdragon.a(fmath.o)
