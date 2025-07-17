@@ -248,7 +248,7 @@ void tutorial_loop() {
       // Draw Health Bar (Zombie)
       rdpq_sync_pipe();
       for (int i = 0; i < zombie_count; i++) {
-        draw_zombie_health_bar(&zombies[i], vp);      // 2D bar
+        draw_zombie_health_bar(&zombies[i], vp, camera.mode);  // Now passes CameraMode
       }
 
       /*

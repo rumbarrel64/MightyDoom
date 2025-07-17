@@ -132,34 +132,39 @@ void zombie_update(Zombie *z, const T3DVec3 *player_pos, float delta_time, Zombi
 
 }
 
-void draw_zombie_health_bar(const Zombie *z, T3DViewport *viewport) {
+void draw_zombie_health_bar(const Zombie *z, T3DViewport *viewport, CameraMode cam_mode) {
+    
     if (!z->alive || z->health <= 0) return;
 
-    // Offset above the zombie's head
     T3DVec3 world_pos = z->position;
-    world_pos.v[1] += 60.0f; // raise it above the head (50 is good if camera is behind player)
+
+    // Adjust offset depending on camera mode
+    if (cam_mode == CAMERA_TOP_DOWN) {
+        world_pos.v[1] += 60.0f; // higher in world space for top-down view
+    } else {
+        world_pos.v[1] += 50.0f; // lower offset for third-person view
+    }
 
     T3DVec3 screen_pos;
     t3d_viewport_calc_viewspace_pos(viewport, &screen_pos, &world_pos);
 
     const float width = 30.0f;
     const float height = 4.0f;
-    float health_pct = (float)z->health / 5;//ZOMBIE_MAX_HEALTH;
+    float health_pct = (float)z->health / 5.0f;
 
     float x0 = screen_pos.v[0] - width / 2.0f;
     float y0 = screen_pos.v[1];
 
-    // Background bar
-    rdpq_set_mode_fill(RGBA32(50, 50, 50, 255)); // background
+    // Draw background
+    rdpq_set_mode_fill(RGBA32(50, 50, 50, 255));
     rdpq_fill_rectangle(x0, y0, x0 + width, y0 + height);
 
-    // Health Bar
+    // Draw health fill
     rdpq_set_mode_fill(RGBA32(255 * (1.0f - health_pct), 255 * health_pct, 0, 255));
     rdpq_fill_rectangle(x0, y0, x0 + width * health_pct, y0 + height);
-
-    // Damage numbers (needs more work)
-    //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, x0 + width / 2.0f - 4, y0 - 10, "%d", 1);
 }
+
+
 
 void zombie_draw(Zombie *z) {
     t3d_matrix_push(z->model_matrix);

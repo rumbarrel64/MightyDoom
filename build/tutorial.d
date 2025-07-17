@@ -8,5 +8,5 @@ build/tutorial.o: tutorial.c libs.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3danim.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3dskeleton.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3ddebug.h slayer.h \
- zombie.h bullets.h map.h camera.h levels.h level_update.h banners.h \
+ zombie.h camera.h bullets.h map.h levels.h level_update.h banners.h \
  music.h gameState.h

@@ -8,4 +8,4 @@ build/slayer.o: slayer.c slayer.h libs.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3danim.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3dskeleton.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3ddebug.h zombie.h \
- collision.h
+ camera.h collision.h

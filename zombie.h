@@ -2,6 +2,7 @@
 #pragma once
 
 #include "libs.h"
+#include "camera.h"
 
 #define ZOMBIE_COLLISION_RADIUS 20.0f
 
@@ -41,8 +42,8 @@ void zombie_init(Zombie *z, const T3DVec3 *start_pos);
 // Update one zombie's movement and animation
 void zombie_update(Zombie *z, const T3DVec3 *player_pos, float delta_time, Zombie *zombies, int count);
 
-// New
-void draw_zombie_health_bar(const Zombie *z, T3DViewport *viewport);
+// Draw zombie health bar
+void draw_zombie_health_bar(const Zombie *z, T3DViewport *viewport, CameraMode cam_mode);
 
 // Draw one zombie
 void zombie_draw(Zombie *z);
