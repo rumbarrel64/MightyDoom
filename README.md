@@ -1,4 +1,2 @@
 # MightyDoom
-An N64 Demake of Mighty Doom 
-
-Test Updating
+A demake (remake for an older platform) of Mighty Doom for the Nintendo 64.
