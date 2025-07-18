@@ -324,12 +324,12 @@ void tutorial_loop() {
     // Sprite Cleanup
 
     // Zombie(s) Cleanup
-    zombie_destroy_all(zombies, zombie_count);
+    zombie_destroy_all(zombies, enemy_count);
 
     // Banner(s) Cleanup
     banners_destroy();
-    free(spawn_matrices);
-    free(blood_matrices);
+    free_uncached(spawn_matrices);
+    free_uncached(blood_matrices);
 
     // Arrow Cleanup
     // Free model matrix
