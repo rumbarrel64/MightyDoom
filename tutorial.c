@@ -22,9 +22,6 @@ float get_time_s() {
 // This is used for zombie blood shrinking
 float level_timer = 0.0f;
 
-// Add this as a static variable at the top of tutorial_loop()
-static bool has_progressed_past_level_1 = false; // new
-
 void tutorial_loop() {
 
   T3DVec3 lightDirVec = {{1.0f, 1.0f, 1.0f}};
@@ -36,12 +33,9 @@ void tutorial_loop() {
   music_load("Tutorial_5_5_11_5.wav64");
 
    // Level definition
-    const LevelData *levels[] = {
-        &LEVEL_1,
-        &LEVEL_2
-    };
-    int current_level_index = 0;
-    const LevelData *level = levels[current_level_index];
+  const LevelData **levels = ALL_LEVELS;  // Use the global array
+  int current_level_index = 0;
+  const LevelData *level = levels[current_level_index];
 
   // Initialize Camera
   Camera camera;
@@ -136,26 +130,23 @@ void tutorial_loop() {
       joypad_inputs_t joypad = joypad_get_inputs(JOYPAD_PORT_1);
       joypad_buttons_t btn = joypad_get_buttons_pressed(JOYPAD_PORT_1);
 
+      /*
+      // Check exit condition FIRST, before any continues
+      if (btn.start || (level_1_completed && level_2_completed)) {
+          state = STATE_MENU;
+          break; // Exit the while loop immediately
+      };
+      */
+
       //Music
       music_play();
 
-     // Level Switch Logic
-     if (level_update(&player, zombies, zombie_count, &enemy_count, &level)) {
-      
-      level_timer = get_time_s(); // Record new level start time
-      // Update Zombie Counts at Level change
-      current_level_index = (current_level_index + 1) % TOTAL_LEVELS; // Increment the level index and reset to 0
-      
-      // Track that we've progressed beyond level 1
-      if (current_level_index > 0) {
-        has_progressed_past_level_1 = true;
-      }
-      
-      level = levels[current_level_index]; // Update which level on
-      zombie_count = level->zombie_count; // Update Zombie count based on level
-      continue; // Skip drawing this frame
-    
-    };
+      // Level Switch Logic - Let level_update.c handle everything
+      if (level_update(&player, zombies, zombie_count, &enemy_count, &level)) {
+          level_timer = get_time_s();
+          zombie_count = level->zombie_count;  // Just sync the count, don't manage levels
+          continue;
+      };
       
       // Update Player
       player_update(&player, deltaTime, joypad, btn, zombies, zombie_count);
@@ -281,8 +272,8 @@ void tutorial_loop() {
 
       posY = 216;
       // MEMORY TRACKING
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, 10, 15, "Mem: %d KiB", heap_stats.used/1024); // get memory usage
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "FPS: %.2f", display_get_fps()); posY += 10; // Get FPS
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, 10, 15, "Mem: %d KiB", heap_stats.used/1024); // get memory usage
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "FPS: %.2f", display_get_fps()); posY += 10; // Get FPS
   
       // LEVEL
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Map (X, Y): (%.4f, %.4f)",  map.position.v[0], map.position.v[2]); posY += 10; //Displays position
@@ -290,6 +281,13 @@ void tutorial_loop() {
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Enemy Count: (%d)", enemy_count); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Total Levels: (%d)", TOTAL_LEVELS); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Index: (%d)", current_level_index); posY += 10;
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level ptr: %s", 
+          (level == &LEVEL_1) ? "L1" : 
+          (level == &LEVEL_2) ? "L2" : 
+          (level == &LEVEL_END) ? "END" : "Unknown"); posY += 10;
+
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie count: %d", zombie_count); posY += 10;
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Exit check: %d", (level == &LEVEL_END) ? 1 : 0); posY += 10;
 
       // BULLET
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Bullet Position (X, Y): (%.4f, %.4f)", bullet.position.v[0], bullet.position.v[2]); posY += 10; //Displays position
@@ -310,8 +308,8 @@ void tutorial_loop() {
 
       // ZOMBIE
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie blood scale: (%.4f)",zombies[1].blood_scale - 0.01f * (get_time_s() - zombies[0].blood_time)); posY += 10;
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Count: (%d)", zombie_count); posY += 10;
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Enemy Count: (%d)", enemy_count); posY += 10;
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Count: (%d)", zombie_count); posY += 10;
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Enemy Count: (%d)", enemy_count); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Death time:%.4f", zombies[0].blood_time); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Life: (%d, %d)", zombies[0].health, zombies[1].health); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Alive: (%d, %d)", zombies[0].alive, zombies[1].alive); posY += 10;
@@ -319,17 +317,13 @@ void tutorial_loop() {
 
       rdpq_detach_show();
 
-      // for now, press start to go back to menu
-      /*
-      if (btn.start) {
+    // Manual exit - press start OR reached end level
+    if (btn.start || level == &LEVEL_END) {
         state = STATE_MENU;
-      };
-      */
-     if (btn.start || (has_progressed_past_level_1 && current_level_index == 0)) {
-    state = STATE_MENU;
-};
+    };
+      
+    }; // End Tutorial Loop
 
-    }
     // Music Stop
     music_stop();
     

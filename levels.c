@@ -25,5 +25,18 @@ const LevelData LEVEL_2 = {
     }
 };
 
-const LevelData* ALL_LEVELS[] = { &LEVEL_1, &LEVEL_2 };
+const LevelData LEVEL_END = {
+    .player = {
+        .position = {{0.0f, 0.15f, 104.0f}},
+        .rotation_y = 3.1416f
+    },
+    .zombie_count = 0,  // No zombies - instant completion
+    .zombies = {}
+};
+
+const LevelData* ALL_LEVELS[] = { 
+    &LEVEL_1, 
+    &LEVEL_2,
+    &LEVEL_END  // Add this line
+};
 const int TOTAL_LEVELS = sizeof(ALL_LEVELS) / sizeof(ALL_LEVELS[0]);

@@ -18,6 +18,7 @@ typedef struct {
 
 extern const LevelData LEVEL_1;
 extern const LevelData LEVEL_2;
+extern const LevelData LEVEL_END; 
 
 extern const LevelData* ALL_LEVELS[];
 extern const int TOTAL_LEVELS;

@@ -1,7 +1,6 @@
 // level_update.c
 #include "level_update.h"
 
-
 // Goal box constants
 #define GOAL_MIN_X   -30.0f
 #define GOAL_MAX_X   30.0f
@@ -9,13 +8,7 @@
 #define GOAL_MAX_Y   -130.0f
 #define RESET_FRAMES 15
 
-// Add all levels here
-static const LevelData *levels[] = {
-    &LEVEL_1,
-    &LEVEL_2
-};
-#define TOTAL_LEVELS (sizeof(levels) / sizeof(LevelData*))
-
+// Use the global levels array instead of a local one
 static int current_level_index = 0;
 
 bool level_update(Player *player, Zombie *zombies, int zombie_count, int *enemy_count, const LevelData **level_out) {
@@ -38,10 +31,11 @@ bool level_update(Player *player, Zombie *zombies, int zombie_count, int *enemy_
             rdpq_detach_show();
             reset_timer--;
             return true; // Skip game frame while black screen
+        
         } else {
-            // Progress to next level (loop back to 0 after last)
+            // Progress to next level using global ALL_LEVELS array
             current_level_index = (current_level_index + 1) % TOTAL_LEVELS;
-            const LevelData *level = levels[current_level_index];
+            const LevelData *level = ALL_LEVELS[current_level_index];  // Use global array
             *level_out = level;
 
             // Reset player
