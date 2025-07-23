@@ -22,6 +22,9 @@ float get_time_s() {
 // This is used for zombie blood shrinking
 float level_timer = 0.0f;
 
+// Add this as a static variable at the top of tutorial_loop()
+static bool has_progressed_past_level_1 = false; // new
+
 void tutorial_loop() {
 
   T3DVec3 lightDirVec = {{1.0f, 1.0f, 1.0f}};
@@ -142,12 +145,18 @@ void tutorial_loop() {
       level_timer = get_time_s(); // Record new level start time
       // Update Zombie Counts at Level change
       current_level_index = (current_level_index + 1) % TOTAL_LEVELS; // Increment the level index and reset to 0
+      
+      // Track that we've progressed beyond level 1
+      if (current_level_index > 0) {
+        has_progressed_past_level_1 = true;
+      }
+      
       level = levels[current_level_index]; // Update which level on
       zombie_count = level->zombie_count; // Update Zombie count based on level
       continue; // Skip drawing this frame
     
     };
-  
+      
       // Update Player
       player_update(&player, deltaTime, joypad, btn, zombies, zombie_count);
 
@@ -287,7 +296,7 @@ void tutorial_loop() {
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Bullet Rotation: %.4f", bullet.rotation_y); posY += 10;
 
       //TIME
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Start Time: (%.4f)", level_timer); posY += 10;
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Start Time: (%.4f)", level_timer); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Game Time: (%.4f)", get_time_s()); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "After Death time: (%.4f)", get_time_s() - zombies[0].blood_time); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Reset Time: (%.4f)", get_time_s() - level_timer); posY += 10;
@@ -311,9 +320,14 @@ void tutorial_loop() {
       rdpq_detach_show();
 
       // for now, press start to go back to menu
+      /*
       if (btn.start) {
         state = STATE_MENU;
       };
+      */
+     if (btn.start || (has_progressed_past_level_1 && current_level_index == 0)) {
+    state = STATE_MENU;
+};
 
     }
     // Music Stop
