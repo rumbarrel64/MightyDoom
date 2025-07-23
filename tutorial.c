@@ -16,11 +16,11 @@
 
 // Function to get game runtime
 float get_time_s() {
-  return (float)((double)get_ticks_us() / 1000000.0);
+  return (float)((double)get_ticks_us() / 1000000.0); // Converts microsecond ticks to seconds for timing
 }
 
-// Tracking time per level This is broken now becuase of menu
-float level_start_time = 0.0f;
+// This is used for zombie blood shrinking
+float level_timer = 0.0f;
 
 void tutorial_loop() {
 
@@ -75,9 +75,14 @@ void tutorial_loop() {
   // Initialize Zombie(s)
 
   // Initilaize Enemy count (Sum off all enemy counts)
+  // This goes down by one each time an enemy is killed
   int enemy_count = zombie_count;
   //int enemy_count = 0; // Only use for debugging
   // Initilaize Enemy count
+
+  
+  // To ensure proper clean up of zombies. Static number
+  int allocated_zombie_count = zombie_count;  // Always remembers max allocation
 
   // Initialize Banners
   banners_init();
@@ -133,12 +138,14 @@ void tutorial_loop() {
 
      // Level Switch Logic
      if (level_update(&player, zombies, zombie_count, &enemy_count, &level)) {
-      level_start_time = get_time_s(); // Record new level start time
+      
+      level_timer = get_time_s(); // Record new level start time
       // Update Zombie Counts at Level change
       current_level_index = (current_level_index + 1) % TOTAL_LEVELS; // Increment the level index and reset to 0
       level = levels[current_level_index]; // Update which level on
       zombie_count = level->zombie_count; // Update Zombie count based on level
       continue; // Skip drawing this frame
+    
     };
   
       // Update Player
@@ -222,7 +229,7 @@ void tutorial_loop() {
       };
 
         // 2. Draw SPAWN banner (only during first 4 seconds)
-        if (get_time_s() - level_start_time < 4.0f) {
+        if (get_time_s() - level_timer < 4.0f) {
 
           t3d_mat4fp_from_srt_euler(&spawn_matrices[i],
             (float[3]){0.3f, 0.3f, 0.3f},
@@ -280,20 +287,22 @@ void tutorial_loop() {
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Bullet Rotation: %.4f", bullet.rotation_y); posY += 10;
 
       //TIME
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Start Time: (%.4f)", level_timer); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Game Time: (%.4f)", get_time_s()); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "After Death time: (%.4f)", get_time_s() - zombies[0].blood_time); posY += 10;
-      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Reset Time: (%.4f)", get_time_s() - level_start_time); posY += 10;
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Reset Time: (%.4f)", get_time_s() - level_timer); posY += 10;
       
 
       //SLAYER
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zomebie Player Distance (X, Y): (%.4f)", sqrt((player.position.v[0] - zombies[0].position.v[0]) * (player.position.v[0] - zombies[0].position.v[0]) + (player.position.v[2] - zombies[0].position.v[2]) * (player.position.v[2] - zombies[0].position.v[2]))); posY += 10; //Displays position
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zomebie Player Distance (X, Y): (%.4f)", sqrt((player.position.v[0] - zombies[0].position.v[0]) * (player.position.v[0] - zombies[0].position.v[0]) + (player.position.v[2] - zombies[0].position.v[2]) * (player.position.v[2] - zombies[0].position.v[2]))); posY += 10; //Displays position
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Player Positions (X, Y): (%.4f, %.4f)", player.position.v[0], player.position.v[2]); posY += 10; //Displays position
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Slayer Rotation (Y):%.4f", player.rotation_y); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Speed: %.4f", currSpeed); posY += 10; //Speed
 
       // ZOMBIE
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie blood scale: (%.4f)",zombies[1].blood_scale - 0.01f * (get_time_s() - zombies[0].blood_time)); posY += 10;
-      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Count: (%d)", zombie_count); posY += 10;
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Count: (%d)", zombie_count); posY += 10;
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Enemy Count: (%d)", enemy_count); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Death time:%.4f", zombies[0].blood_time); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Life: (%d, %d)", zombies[0].health, zombies[1].health); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie Alive: (%d, %d)", zombies[0].alive, zombies[1].alive); posY += 10;
@@ -324,7 +333,7 @@ void tutorial_loop() {
     // Sprite Cleanup
 
     // Zombie(s) Cleanup
-    zombie_destroy_all(zombies, enemy_count);
+    zombie_destroy_all(zombies, allocated_zombie_count);
 
     // Banner(s) Cleanup
     banners_destroy();

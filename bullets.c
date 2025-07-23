@@ -89,7 +89,7 @@ void bullet_draw(Bullet *b)
 void bullet_cleanup(Bullet *b) 
   {
     // Free model matrix
-    free(b->matrix);
+    free_uncached(b->matrix);
     // Free model
     t3d_model_free(b->model);
   }
