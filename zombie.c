@@ -133,20 +133,33 @@ void zombie_update(Zombie *z, const T3DVec3 *player_pos, float delta_time, Zombi
 }
 
 void draw_zombie_health_bar(const Zombie *z, T3DViewport *viewport, CameraMode cam_mode) {
-    
     if (!z->alive || z->health <= 0) return;
 
     T3DVec3 world_pos = z->position;
-
-    // Adjust offset depending on camera mode
-    if (cam_mode == CAMERA_TOP_DOWN) {
-        world_pos.v[1] += 60.0f; // higher in world space for top-down view
-    } else {
-        world_pos.v[1] += 50.0f; // lower offset for third-person view
-    }
-
     T3DVec3 screen_pos;
-    t3d_viewport_calc_viewspace_pos(viewport, &screen_pos, &world_pos);
+    
+    if (cam_mode == CAMERA_TOP_DOWN) {
+        // For top-down, use fixed world space offset
+        world_pos.v[1] += 60.0f;
+        t3d_viewport_calc_viewspace_pos(viewport, &screen_pos, &world_pos);
+    } else {
+        // For third-person, get the base position for horizontal centering
+        T3DVec3 base_screen_pos;
+        t3d_viewport_calc_viewspace_pos(viewport, &base_screen_pos, &world_pos);
+        
+        // Use distance-scaled world space offset for consistent vertical positioning
+        float distance_factor = base_screen_pos.v[2] / 50.0f;
+        if (distance_factor < 0.5f) distance_factor = 0.5f;
+        if (distance_factor > 2.0f) distance_factor = 2.0f;
+        
+        world_pos.v[1] += 90.0f * distance_factor;
+        
+        // Project the offset position
+        t3d_viewport_calc_viewspace_pos(viewport, &screen_pos, &world_pos);
+        
+        // Fix horizontal centering by using base X position
+        screen_pos.v[0] = base_screen_pos.v[0];  // Keep X centered over zombie
+    }
 
     const float width = 30.0f;
     const float height = 4.0f;
@@ -163,8 +176,6 @@ void draw_zombie_health_bar(const Zombie *z, T3DViewport *viewport, CameraMode c
     rdpq_set_mode_fill(RGBA32(255 * (1.0f - health_pct), 255 * health_pct, 0, 255));
     rdpq_fill_rectangle(x0, y0, x0 + width * health_pct, y0 + height);
 }
-
-
 
 void zombie_draw(Zombie *z) {
     t3d_matrix_push(z->model_matrix);

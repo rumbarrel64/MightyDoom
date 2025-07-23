@@ -60,3 +60,11 @@ bool level_update(Player *player, Zombie *zombies, int zombie_count, int *enemy_
 
     return false; // Continue regular game frame
 }
+
+int get_current_level_index(void) {
+    return current_level_index;
+}
+
+void reset_level_index(void) {
+    current_level_index = 0;
+}

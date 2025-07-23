@@ -10,4 +10,8 @@
 
 bool level_update(Player *player, Zombie *zombies, int zombie_count, int *enemy_count, const LevelData **level_out);
 
+int get_current_level_index(void);
+
+void reset_level_index(void);
+
 #endif
