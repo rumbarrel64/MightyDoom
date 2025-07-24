@@ -137,6 +137,9 @@ void player_update(Player *player, float delta_time, joypad_inputs_t joypad, joy
         float new_angle = atan2f(player->move_dir.v[0], player->move_dir.v[2]);
         player->rotation_y = t3d_lerp_angle(player->rotation_y, new_angle, 0.25f);
         player->speed = t3d_lerp(player->speed, speed * 0.15f, 0.15f);
+
+        // Cap the speed at 0.6319
+        if (player->speed > 0.6319f) player->speed = 0.6319f;
     } else {
         player->speed *= 0.8f;
     }
