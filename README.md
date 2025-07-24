@@ -9,3 +9,4 @@ A demake (remake for an older platform) of Mighty Doom for the Nintendo 64.
 # Current Bug TODO List
 - [x] Fix Zombie Memory Leak (attack animation and skeleblend)
 - [X] Fix Leak when switching back and forth between menu
+- [X] Normalize Slayer Speed
