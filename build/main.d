@@ -7,5 +7,5 @@ build/main.o: main.c libs.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3dmodel.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3danim.h \
  /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3dskeleton.h \
- /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3ddebug.h menu.h music.h \
- tutorial.h gameState.h
+ /mnt/c/Users/lesli/workspace/tiny3d//src/t3d/t3ddebug.h menu.h \
+ gameaudio.h tutorial.h gameState.h

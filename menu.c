@@ -1,6 +1,6 @@
 // menu.c
 #include "libs.h"
-#include "music.h"
+#include "gameaudio.h"
 #include "menu.h"
 #include "gameState.h"
 
@@ -18,8 +18,9 @@ void menu_loop() {
     const int menu_spacing = 20;
     const int cursor_x = menu_x - 20;           // align sprite left of text
 
-    // Load in Music
+    // Load and Start Menu Music
     music_load("Main_Menu_n64.wav64");
+    music_play();  // Start playing immediately
 
     while (state == STATE_MENU) {
 
@@ -53,8 +54,8 @@ void menu_loop() {
 
         rdpq_detach_show();
 
-        //Music
-        music_play();
+        // Audio Update (handles all audio processing)
+        audio_update();
 
         joypad_poll();
         joypad_inputs_t joypad = joypad_get_inputs(JOYPAD_PORT_1);
@@ -88,17 +89,10 @@ void menu_loop() {
             stick_pressed = 0;
         }
 
-        /*
-        if (btn.d_down || btn.d_up || joypad.stick_y) { // dobule check if joypad works
-            menu_index = 1 - menu_index; // Toggle between 0 and 1
-            wait_ms(120); // Prevents rapid scrolling
-        }
-        */
-
     }
 
     // Free Assests to prevent memory leaks
     sprite_free(menuCursor);
-    music_stop();
+    music_cleanup();  // Updated from music_stop() - now stops and unload
 
 }

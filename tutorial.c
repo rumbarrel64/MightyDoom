@@ -10,11 +10,11 @@
 #include "zombie.h"
 #include "levels.h"
 #include "level_update.h"
-#include "music.h"
+#include "gameaudio.h"
 #include "banners.h"
 #include "gameState.h"
 
-// Function to get game runtime
+// Function to get game runtime (Since n64 turned on)
 float get_time_s() {
   return (float)((double)get_ticks_us() / 1000000.0); // Converts microsecond ticks to seconds for timing
 }
@@ -24,6 +24,9 @@ float level_timer = 0.0f;
 
 void tutorial_loop() {
 
+  // At tutorial start:
+  float time_offset = get_time_s();  // Capture menu time to subtract
+
   // Reset level progression when starting tutorial
   reset_level_index();
 
@@ -32,8 +35,17 @@ void tutorial_loop() {
   uint8_t colorAmbient[4] = {0xAA, 0xAA, 0xAA, 0xFF};
   uint8_t colorDir[4]     = {0xFF, 0xAA, 0xAA, 0xFF};
 
-  // Load in Music
+  // Audio
+  // Load Audio Files (prepare but don't play yet)
   music_load("Tutorial_5_5_11_5.wav64");
+  sfx1_load("fight.wav64");
+
+  // Ensure fight sound only played once
+  bool fight_sound_played = false;
+
+  // Start Music Immediately
+  //music_play();
+  // Audio
 
    // Level definition
   const LevelData *level = ALL_LEVELS[0];  // Start with first level directly
@@ -115,6 +127,9 @@ void tutorial_loop() {
 
     while (state ==  STATE_TUTORIAL) {
 
+      // Get Tutorial Game Time:
+      float tutorial_time = get_time_s() - time_offset;  // This starts at 0
+
       // ======== Update ======== //
 
       // get memory usage (Must be inside the loop to get memory per frame)
@@ -130,9 +145,16 @@ void tutorial_loop() {
 
       joypad_inputs_t joypad = joypad_get_inputs(JOYPAD_PORT_1);
       joypad_buttons_t btn = joypad_get_buttons_pressed(JOYPAD_PORT_1);
+      
+      
+      // Play fight sound after 1 second, only once
+      if (!fight_sound_played && tutorial_time >= 1.0f) {
+          sfx1_play();
+          fight_sound_played = true;
+      }
 
-      //Music
-      music_play();
+      // Audio Update (processes ALL audio - music + SFX)
+      audio_update();
 
       // Level Switch Logic - Let level_update.c handle everything
       if (level_update(&player, zombies, zombie_count, &enemy_count, &level)) {
@@ -280,8 +302,9 @@ void tutorial_loop() {
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Bullet Rotation: %.4f", bullet.rotation_y); posY += 10;
 
       //TIME
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Game Time: (%.4f)", get_time_s()); posY += 10; // Since turning on n64
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Start Time: (%.4f)", level_timer); posY += 10;
-      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Game Time: (%.4f)", get_time_s()); posY += 10;
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Start Time: (%.4f)", tutorial_time); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "After Death time: (%.4f)", get_time_s() - zombies[0].blood_time); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Reset Time: (%.4f)", get_time_s() - level_timer); posY += 10;
       
@@ -310,8 +333,8 @@ void tutorial_loop() {
   
     }; // End Tutorial Loop
 
-    // Music Stop
-    music_stop();
+    // Audio Cleanup (stops and unloads everything)
+    audio_cleanup_all();
     
     // Bullets Cleanup
     bullet_cleanup(&bullet);

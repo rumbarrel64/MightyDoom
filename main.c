@@ -1,7 +1,7 @@
 // General file to hold all libraries
 #include "libs.h"
 #include "menu.h"
-#include "music.h"
+#include "gameaudio.h"
 #include "tutorial.h"
 #include "gameState.h"
 
@@ -19,8 +19,8 @@ int main(void) {
     joypad_init();
     t3d_init((T3DInitParams){});
 
-    // Initialize Music
-    music_init();
+    // Initialize Audio System
+    audio_system_init();
 
     // Load Font Data
     rdpq_text_register_font(FONT_BUILTIN_DEBUG_MONO, rdpq_font_load_builtin(FONT_BUILTIN_DEBUG_MONO));
