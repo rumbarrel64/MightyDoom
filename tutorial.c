@@ -37,14 +37,14 @@ void tutorial_loop() {
 
   // Audio
   // Load Audio Files (prepare but don't play yet)
-  music_load("Tutorial_5_5_11_5.wav64");
-  sfx1_load("fight.wav64");
+  music_load("rom:/Tutorial_5_5_11_5.wav64");
+  sfx1_load("rom:/fight.wav64");
 
   // Ensure fight sound only played once
   bool fight_sound_played = false;
 
   // Start Music Immediately
-  //music_play();
+  music_play();
   // Audio
 
    // Level definition
@@ -313,7 +313,7 @@ void tutorial_loop() {
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zomebie Player Distance (X, Y): (%.4f)", sqrt((player.position.v[0] - zombies[0].position.v[0]) * (player.position.v[0] - zombies[0].position.v[0]) + (player.position.v[2] - zombies[0].position.v[2]) * (player.position.v[2] - zombies[0].position.v[2]))); posY += 10; //Displays position
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Player Positions (X, Y): (%.4f, %.4f)", player.position.v[0], player.position.v[2]); posY += 10; //Displays position
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Slayer Rotation (Y):%.4f", player.rotation_y); posY += 10;
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Speed: %.4f", player.speed); posY += 10; //Speed
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Speed: %.4f", player.speed); posY += 10; //Speed
 
       // ZOMBIE
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zombie blood scale: (%.4f)",zombies[1].blood_scale - 0.01f * (get_time_s() - zombies[0].blood_time)); posY += 10;

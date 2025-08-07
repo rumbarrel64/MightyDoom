@@ -93,6 +93,6 @@ void menu_loop() {
 
     // Free Assests to prevent memory leaks
     sprite_free(menuCursor);
-    music_cleanup();  // Updated from music_stop() - now stops and unload
+    audio_cleanup_all();  // Updated from music_stop() - now stops and unload
 
 }
