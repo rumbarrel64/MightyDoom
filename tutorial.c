@@ -39,9 +39,11 @@ void tutorial_loop() {
   // Load Audio Files (prepare but don't play yet)
   music_load("rom:/Tutorial_5_5_11_5.wav64");
   sfx1_load("rom:/fight.wav64");
+  sfx2_load("rom:/huntbegins.wav64");
 
   // Ensure fight sound only played once
   bool fight_sound_played = false;
+  bool hunt_sound_played = false; 
 
   // Start Music Immediately
   music_play();
@@ -148,9 +150,15 @@ void tutorial_loop() {
 
       joypad_inputs_t joypad = joypad_get_inputs(JOYPAD_PORT_1);
       joypad_buttons_t btn = joypad_get_buttons_pressed(JOYPAD_PORT_1);
+
+      // Play hunt begins sound after 0.4 seconds, only once
+      if (!hunt_sound_played && tutorial_time >= 0.4f) {
+          sfx2_play();
+          hunt_sound_played = true;
+      }
       
-      // Play fight sound after 1 second, only once
-      if (!fight_sound_played && tutorial_time >= 1.0f) {
+      // Play fight sound after 2.4 seconds, only once
+      if (!fight_sound_played && tutorial_time >= 2.4f) {
           sfx1_play();
           fight_sound_played = true;
       }

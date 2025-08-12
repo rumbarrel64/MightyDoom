@@ -15,6 +15,7 @@ static wav64_t music_wav; // Game Music
 
 // Sound Effects
 static wav64_t sfx1_wav;  // Voice Over
+static wav64_t sfx2_wav;  // Voice Over
 
 void audio_system_init(void) {
     // Initialize audio system
@@ -28,13 +29,18 @@ void audio_system_init(void) {
 void music_load(const char *filename) {
     wav64_open(&music_wav, filename);
     wav64_set_loop(&music_wav, true);
-    //wav64_play(&music_wav, CHANNEL_MUSIC);
 }
 
+// Fight
 void sfx1_load(const char *filename) {
     wav64_open(&sfx1_wav, filename);
     wav64_set_loop(&sfx1_wav, false);  // Play once only
-	//wav64_play(&sfx1_wav, CHANNEL_SFX1);
+}
+
+// The Hunt Begins
+void sfx2_load(const char *filename) {
+    wav64_open(&sfx2_wav, filename);
+    wav64_set_loop(&sfx2_wav, false);  // Play once only
 }
 
 // ========== PLAYING FUNCTIONS (actually start the sound) ==========
@@ -42,10 +48,15 @@ void music_play(void) {
     wav64_play(&music_wav, CHANNEL_MUSIC);
 }
 
+// Fight
 void sfx1_play(void) {
     wav64_play(&sfx1_wav, CHANNEL_SFX1);
 }
 
+// The Hunt Begins
+void sfx2_play(void) {
+    wav64_play(&sfx2_wav, CHANNEL_SFX1);
+}
 
 // ========== AUDIO PROCESSING (handles ALL audio - music + SFX) ==========
 void audio_update(void) {
@@ -70,7 +81,8 @@ void music_stop(void) {
     mixer_ch_stop(CHANNEL_MUSIC);
 }
 
-void sfx1_stop(void) {
+// Stops both Fight and The Hunt Begins
+void sfx_stop(void) {
     mixer_ch_stop(CHANNEL_SFX1);
 }
 
@@ -80,14 +92,15 @@ void music_cleanup(void) {
     wav64_close(&music_wav);
 }
 
-void sfx1_cleanup(void) {
+void sfx_cleanup(void) {
     mixer_ch_stop(CHANNEL_SFX1);
     wav64_close(&sfx1_wav);
+    wav64_close(&sfx2_wav);
 }
 
 void audio_cleanup_all(void) {
     music_cleanup();
-    sfx1_cleanup();
+    sfx_cleanup();
 }
 
 /*
