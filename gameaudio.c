@@ -5,14 +5,10 @@
 
 // Mixer channel allocation (More Channels, More Audio!!)
 // Max channles 16
-/*
-Since your audio files are stereo, you need to adjust your defines 
-to leave space for the other channel. Otherwise, you'll start playing the music and then attempt to 
-play the left channel of the first SFX in the music's right channel
-*/
-#define CHANNEL_MUSIC 0  // Load music in and out into to this channel
-#define CHANNEL_SFX1 2   // Load sound effect for Fight (maybe others later)
-#define CHANNEL_SFX2 4   // Additional channel for future sounds
+// Stereo files use 2 consecutive channels (left + right) 
+#define CHANNEL_MUSIC 0  // Load music in and out into to this channel. Uses channels 0 (left) and 1 (right)
+#define CHANNEL_SFX1 2   // Load sound effect for Fight (maybe others later). Uses channels 2 (left) and 3 (right) 
+#define CHANNEL_SFX2 4   // Additional channel for future sounds. Uses channels 4 (left) and 5 (right)
 
 // Music
 static wav64_t music_wav; // Game Music
