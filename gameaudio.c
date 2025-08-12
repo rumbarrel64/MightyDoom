@@ -49,7 +49,9 @@ void sfx1_play(void) {
 // ========== AUDIO PROCESSING (handles ALL audio - music + SFX) ==========
 void audio_update(void) {
 
-    	// Check if there are any free audio buffers
+    mixer_try_play();
+    /*  
+    // Check if there are any free audio buffers
 	  if (audio_can_write()) {
 		  // Select an audio buffer that we can write to
 		  short *buf = audio_write_begin();
@@ -59,6 +61,7 @@ void audio_update(void) {
 		  // been filled and is ready for playback
 		  audio_write_end();
 	  };
+      */
 }
 
 // ========== STOPPING FUNCTIONS ==========

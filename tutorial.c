@@ -132,6 +132,9 @@ void tutorial_loop() {
 
       // ======== Update ======== //
 
+      // CRITICAL: Feed audio buffer EARLY and OFTEN
+      audio_update();  // Call #1 - Right at start of frame
+
       // get memory usage (Must be inside the loop to get memory per frame)
       heap_stats_t heap_stats;
       sys_get_heap_stats(&heap_stats);
@@ -145,7 +148,9 @@ void tutorial_loop() {
 
       joypad_inputs_t joypad = joypad_get_inputs(JOYPAD_PORT_1);
       joypad_buttons_t btn = joypad_get_buttons_pressed(JOYPAD_PORT_1);
-      
+
+      // Feed audio buffer between expensive operations
+      audio_update();  // Call #2 - After input processing
       
       // Play fight sound after 1 second, only once
       if (!fight_sound_played && tutorial_time >= 1.0f) {
@@ -162,6 +167,9 @@ void tutorial_loop() {
           zombie_count = level->zombie_count;  // Just sync the count, don't manage levels
           continue;
       };
+
+      // Feed audio buffer after level update
+      audio_update();  // Call #3 - After level processing
       
       // Update Player
       player_update(&player, deltaTime, joypad, btn, zombies, zombie_count);
@@ -171,13 +179,19 @@ void tutorial_loop() {
       //bullet_update(&bullet, &player.position, player.rotation_y, 140.0f, zombies, &zombie_count, &enemy_count, btn);
       bullet_update(&bullet, &player.position, player.rotation_y, zombies, &zombie_count, &enemy_count);
       
+      // Feed audio buffer after game logic updates
+      audio_update();  // Call #4 - After game update
+
       // Update Zombie
       zombie_update_all(zombies, zombie_count, &player.position, deltaTime);
 
       // Update Camera
       camera_update(&camera, &player.position, player.rotation_y);
       if (btn.l) camera_toggle_mode(&camera); // Swtich between views
-      // Update Camera
+
+
+      // Feed audio buffer before expensive rendering
+      audio_update();  // Call #5 - Before rendering
 
       if(syncPoint)rspq_syncpoint_wait(syncPoint); // wait for the RSP to process the previous frame
     
@@ -189,6 +203,9 @@ void tutorial_loop() {
 
       t3d_screen_clear_color(RGBA32(224, 180, 96, 0xFF));
       t3d_screen_clear_depth();
+
+      // Feed audio buffer during rendering setup
+      audio_update();  // Call #6 - During rendering setup
 
       t3d_light_set_ambient(colorAmbient);
       t3d_light_set_directional(0, colorDir, &lightDirVec);
@@ -218,6 +235,9 @@ void tutorial_loop() {
           map_draw(&mapWall);
           map_draw(&map);
       };
+
+      // Feed audio buffer between drawing operations
+      audio_update();  // Call #7 - Between draw calls
  
       // Draw (Banners)
       for (int i = 0; i < zombie_count; i++) {
@@ -265,6 +285,9 @@ void tutorial_loop() {
 
       // Draw (Zombies)
       zombie_draw_all(zombies, zombie_count);
+
+      // Feed audio buffer before sync operations
+      audio_update();  // Call #8 - Before sync
 
       //SYNC PIPE ISSUE
       // Draw Health Bar (Zombie)

@@ -15,7 +15,7 @@ int main(void) {
     dfs_init(DFS_DEFAULT_LOCATION);
     display_init(RESOLUTION_320x240, DEPTH_16_BPP, 3, GAMMA_NONE, FILTERS_RESAMPLE_ANTIALIAS);
     rdpq_init();
-    rdpq_debug_start(); // Only use for debugging purposes.
+    //rdpq_debug_start(); // Only use for debugging purposes.
     joypad_init();
     t3d_init((T3DInitParams){});
 

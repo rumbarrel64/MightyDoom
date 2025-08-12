@@ -19,7 +19,7 @@ void menu_loop() {
     const int cursor_x = menu_x - 20;           // align sprite left of text
 
     // Load and Start Menu Music
-    music_load("Main_Menu_n64.wav64");
+    music_load("rom:/Main_Menu_n64.wav64");
     music_play();  // Start playing immediately
 
     while (state == STATE_MENU) {
