@@ -7,7 +7,8 @@ A demake (remake for an older platform) of Mighty Doom for the Nintendo 64.
 - [ ] Add Enemy Damage Numbers
 - [ ] Add Slayer Drop in Animation
 - [ ] Add Spinning Banner Under Enemies
-- [ ] Add Fight Audio
+- [X] Add Fight Audio
+- [ ] Add the Hunt Beings Audio
 
 # Current Bug TODO List
 - [x] Fix Zombie Memory Leak (attack animation and skeleblend)
