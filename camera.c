@@ -15,7 +15,8 @@ void camera_update(Camera *cam, const T3DVec3 *player_pos, float rotation_y) {
 
     if (cam->mode == CAMERA_TOP_DOWN) {
         cam->position.v[0] = cam->target.v[0];
-        cam->position.v[1] = cam->target.v[1] + 180;
+        //cam->position.v[1] = cam->target.v[1] + 180;
+        cam->position.v[1] = 180;
         cam->position.v[2] = cam->target.v[2];
         t3d_viewport_look_at(&cam->viewport, &cam->position, &cam->target, &(T3DVec3){{0, 0, -1}});
     } else {

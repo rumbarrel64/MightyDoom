@@ -45,6 +45,9 @@ void tutorial_loop() {
   bool fight_sound_played = false;
   bool hunt_sound_played = false; 
 
+  // Wait to give plater control until after intro animation
+  bool player_has_control = false;  // Player starts with NO control
+
   // Start Music Immediately
   music_play();
   // Audio
@@ -163,6 +166,14 @@ void tutorial_loop() {
           fight_sound_played = true;
       }
 
+      if (tutorial_time >= 1.15f && tutorial_time < 2.0f) {
+          float fall_progress = (tutorial_time - 1.15f) / 0.85f;
+          player.position.v[1] = 125.0f - (124.85f * fall_progress);  // 125 down to 0.15
+      } else if (tutorial_time >= 2.0f) {
+          player.position.v[1] = 0.15f;  // Stay on ground
+          player_has_control = true; // Player now has control
+      };
+
       // Level Switch Logic - Let level_update.c handle everything
       if (level_update(&player, zombies, zombie_count, &enemy_count, &level)) {
           level_timer = get_time_s();
@@ -171,7 +182,15 @@ void tutorial_loop() {
       };
       
       // Update Player
-      player_update(&player, deltaTime, joypad, btn, zombies, zombie_count);
+      if (player_has_control) {
+          // Normal update with real input
+          player_update(&player, deltaTime, joypad, btn, zombies, zombie_count);
+      } else {
+          // During animation: call update but with no input
+           joypad_inputs_t no_input = {0};
+           joypad_buttons_t no_buttons = {0};
+           player_update(&player, deltaTime, no_input, no_buttons, zombies, zombie_count);
+      }
 
       // Update Particle
       //Hard Code Map Boundary for now also used by player (140.f)
@@ -183,7 +202,13 @@ void tutorial_loop() {
 
       // Update Camera
       camera_update(&camera, &player.position, player.rotation_y);
-      if (btn.l) camera_toggle_mode(&camera); // Swtich between views
+
+      // Camera toggle (only if player has control) - safer version
+      if (player_has_control) {
+          if (btn.l) {
+              camera_toggle_mode(&camera);
+          }
+      };
 
       // Call #2 - Before rendering (optional)
       audio_update();
@@ -269,8 +294,10 @@ void tutorial_loop() {
       // Draw (Bullets)
       bullet_draw(&bullet);
       
-      // Draw (Player)
-      player_draw(&player); // Issue with player and zomebie draw. Maybe due to camera??????
+      // Draw (Player) - only after 1.15 seconds
+      if (tutorial_time >= 1.15f) {
+          player_draw(&player);
+      }
 
       // Draw (Zombies)
       zombie_draw_all(zombies, zombie_count);
@@ -314,7 +341,7 @@ void tutorial_loop() {
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Bullet Rotation: %.4f", bullet.rotation_y); posY += 10;
 
       //TIME
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Game Time: (%.4f)", get_time_s()); posY += 10; // Since turning on n64
+      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Game Time: (%.4f)", get_time_s()); posY += 10; // Since turning on n64
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Start Time: (%.4f)", level_timer); posY += 10;
       rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Level Start Time: (%.4f)", tutorial_time); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "After Death time: (%.4f)", get_time_s() - zombies[0].blood_time); posY += 10;
@@ -323,7 +350,7 @@ void tutorial_loop() {
 
       //SLAYER
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zomebie Player Distance (X, Y): (%.4f)", sqrt((player.position.v[0] - zombies[0].position.v[0]) * (player.position.v[0] - zombies[0].position.v[0]) + (player.position.v[2] - zombies[0].position.v[2]) * (player.position.v[2] - zombies[0].position.v[2]))); posY += 10; //Displays position
-      //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Player Positions (X, Y): (%.4f, %.4f)", player.position.v[0], player.position.v[2]); posY += 10; //Displays position
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Player Pos. (X, Y, Z): (%.4f, %.4f, , %.4f)", player.position.v[0], player.position.v[2], player.position.v[1]); posY += 10; //Displays position
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Slayer Rotation (Y):%.4f", player.rotation_y); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Speed: %.4f", player.speed); posY += 10; //Speed
 

@@ -3,7 +3,7 @@
 
 const LevelData LEVEL_1 = {
     .player = {
-        .position = {{0.0f, 0.15f, 104.0f}},
+        .position = {{0.0f, 125.0f, 104.0f}},
         .rotation_y = 3.1416f
     },
     .zombie_count = 3,
