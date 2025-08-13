@@ -13,6 +13,7 @@
 #include "gameaudio.h"
 #include "banners.h"
 #include "gameState.h"
+#include "slayer_animation.h"
 
 // Function to get game runtime (Since n64 turned on)
 float get_time_s() {
@@ -45,15 +46,16 @@ void tutorial_loop() {
   bool fight_sound_played = false;
   bool hunt_sound_played = false; 
 
-  // Wait to give plater control until after intro animation
-  bool player_has_control = false;  // Player starts with NO control
-
   // Start Music Immediately
   music_play();
   // Audio
 
    // Level definition
   const LevelData *level = ALL_LEVELS[0];  // Start with first level directly
+
+  // Initialize slayer entrance animation (fall from 125 units to ground level)
+  SlayerAnimation slayer_anim;
+  slayer_animation_init(&slayer_anim, 125.0f, 0.15f);
 
   // Initialize Camera
   Camera camera;
@@ -100,6 +102,8 @@ void tutorial_loop() {
   int allocated_zombie_count = zombie_count;  // Always remembers max allocation
 
   // Initialize Banners
+  Crack crack;
+  crack_init(&crack, "rom:/crack.t3dm");
   banners_init();
   // Allocate array of T3DMat4FP based on enemy count
   T3DMat4FP* spawn_matrices = malloc(sizeof(T3DMat4FP) * enemy_count);
@@ -166,12 +170,14 @@ void tutorial_loop() {
           fight_sound_played = true;
       }
 
-      if (tutorial_time >= 1.15f && tutorial_time < 2.0f) {
-          float fall_progress = (tutorial_time - 1.15f) / 0.85f;
-          player.position.v[1] = 125.0f - (124.85f * fall_progress);  // 125 down to 0.15
-      } else if (tutorial_time >= 2.0f) {
-          player.position.v[1] = 0.15f;  // Stay on ground
-          player_has_control = true; // Player now has control
+      // Update slayer animation state and position
+      slayer_animation_update(&slayer_anim, &player, &crack, tutorial_time);
+      if (slayer_animation_has_control(&slayer_anim)) {
+          player_update(&player, deltaTime, joypad, btn, zombies, zombie_count);
+      } else {
+          joypad_inputs_t no_input = {0};
+          joypad_buttons_t no_buttons = {0};
+          player_update(&player, deltaTime, no_input, no_buttons, zombies, zombie_count);
       };
 
       // Level Switch Logic - Let level_update.c handle everything
@@ -180,17 +186,6 @@ void tutorial_loop() {
           zombie_count = level->zombie_count;  // Just sync the count, don't manage levels
           continue;
       };
-      
-      // Update Player
-      if (player_has_control) {
-          // Normal update with real input
-          player_update(&player, deltaTime, joypad, btn, zombies, zombie_count);
-      } else {
-          // During animation: call update but with no input
-           joypad_inputs_t no_input = {0};
-           joypad_buttons_t no_buttons = {0};
-           player_update(&player, deltaTime, no_input, no_buttons, zombies, zombie_count);
-      }
 
       // Update Particle
       //Hard Code Map Boundary for now also used by player (140.f)
@@ -204,7 +199,7 @@ void tutorial_loop() {
       camera_update(&camera, &player.position, player.rotation_y);
 
       // Camera toggle (only if player has control) - safer version
-      if (player_has_control) {
+      if (slayer_animation_has_control(&slayer_anim)) {
           if (btn.l) {
               camera_toggle_mode(&camera);
           }
@@ -295,8 +290,13 @@ void tutorial_loop() {
       bullet_draw(&bullet);
       
       // Draw (Player) - only after 1.15 seconds
-      if (tutorial_time >= 1.15f) {
+      if (slayer_animation_should_draw_slayer(&slayer_anim)) {
           player_draw(&player);
+      };
+
+      // (Draw (Player Crack Animation)
+      if (slayer_animation_should_draw_crack(&slayer_anim)) {
+          crack_draw(&crack);
       }
 
       // Draw (Zombies)
@@ -350,7 +350,7 @@ void tutorial_loop() {
 
       //SLAYER
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Zomebie Player Distance (X, Y): (%.4f)", sqrt((player.position.v[0] - zombies[0].position.v[0]) * (player.position.v[0] - zombies[0].position.v[0]) + (player.position.v[2] - zombies[0].position.v[2]) * (player.position.v[2] - zombies[0].position.v[2]))); posY += 10; //Displays position
-      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Player Pos. (X, Y, Z): (%.4f, %.4f, , %.4f)", player.position.v[0], player.position.v[2], player.position.v[1]); posY += 10; //Displays position
+      rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Player Pos. (X, Y, Z): (%.4f, %.4f, %.4f)", player.position.v[0], player.position.v[2], player.position.v[1]); posY += 10; //Displays position
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Slayer Rotation (Y):%.4f", player.rotation_y); posY += 10;
       //rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, posX, posY, "Speed: %.4f", player.speed); posY += 10; //Speed
 
@@ -392,6 +392,7 @@ void tutorial_loop() {
     zombie_destroy_all(zombies, allocated_zombie_count);
 
     // Banner(s) Cleanup
+    crack_cleanup(&crack);
     banners_destroy();
     free_uncached(spawn_matrices);
     free_uncached(blood_matrices);

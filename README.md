@@ -5,7 +5,7 @@ A demake (remake for an older platform) of Mighty Doom for the Nintendo 64.
 
 # Current New Feature TODO List
 - [ ] Add Enemy Damage Numbers
-- [ ] Add Slayer Drop in Animation
+- [X] Add Slayer Drop in Animation
 - [ ] Add Spinning Banner Under Enemies
 - [X] Add Fight Audio
 - [ ] Add the Hunt Beings Audio

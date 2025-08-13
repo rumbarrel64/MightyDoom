@@ -9,11 +9,20 @@ typedef enum {
     // add more here later
 } BannerType;
 
-/// Load a shared shadow model once and reuse it for all shadows
+typedef struct {
+    T3DModel *model;
+    T3DMat4FP *matrix;
+    T3DVec3 position;
+} Crack;
+
+
+
+// Banner functions
 void banners_init(void);
-
-/// Free the shared shadow model
 void banners_destroy(void);
-
-/// Draw a shadow under a character or object
 void draw_floor_banner(const T3DMat4FP *matrix, BannerType type);
+
+// Crack functions
+void crack_init(Crack *crack, const char *model_path);
+void crack_draw(Crack *crack);
+void crack_cleanup(Crack *crack);
