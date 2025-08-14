@@ -11,9 +11,15 @@ typedef struct {
 } SpawnData;
 
 typedef struct {
+    T3DVec3 position;
+    float rotation_y;
+    bool spawn_delay;  // If true, wait for slayer Y <= -10
+} EnemySpawnData;
+
+typedef struct {
     SpawnData player;
     int zombie_count;
-    SpawnData zombies[MAX_ZOMBIES];
+    EnemySpawnData zombies[MAX_ZOMBIES];
 } LevelData;
 
 extern const LevelData LEVEL_1;

@@ -23,7 +23,7 @@ void crack_init(Crack *crack, const char *model_path) {
     crack->matrix = malloc_uncached(sizeof(T3DMat4FP));
 
     // Default scale and rotation
-    float scale[3] = {0.5f, 0.5f, 0.5f};
+    float scale[3] = {0.4f, 0.4f, 0.4f};
     float rotation[3] = {0.0f, 0.0f, 0.0f};
 
     // Create transform matrix

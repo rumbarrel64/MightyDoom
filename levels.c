@@ -8,9 +8,9 @@ const LevelData LEVEL_1 = {
     },
     .zombie_count = 3,
     .zombies = {
-        { .position = {{  0.0f, 0.15f, -96.0f }}, .rotation_y = 0.0f },
-        { .position = {{ 82.0f, 0.15f, -123.0f }}, .rotation_y = 0.0f },
-        { .position = {{-87.0f, 0.15f, -123.0f }}, .rotation_y = 0.0f }
+        { .position = {{  0.0f, 0.15f, -96.0f }}, .rotation_y = 0.0f, .spawn_delay = true },  // Wait for slayer Y <= -10
+        { .position = {{ 82.0f, 0.15f, -123.0f }}, .rotation_y = 0.0f, .spawn_delay = true },  // Wait for slayer Y <= -10
+        { .position = {{-87.0f, 0.15f, -123.0f }}, .rotation_y = 0.0f, .spawn_delay = true }   // Wait for slayer Y <= -10
     }
 };
 
@@ -21,7 +21,7 @@ const LevelData LEVEL_2 = {
     },
     .zombie_count = 1,
     .zombies = {
-        { .position = {{  0.0f, 0.15f, 32.0f }}, .rotation_y = 0.0f }
+        { .position = {{  0.0f, 0.15f, 32.0f }}, .rotation_y = 0.0f, .spawn_delay = false }  // Spawn immediately
     }
 };
 
@@ -37,6 +37,6 @@ const LevelData LEVEL_END = {
 const LevelData* ALL_LEVELS[] = { 
     &LEVEL_1, 
     &LEVEL_2,
-    &LEVEL_END  // Add this line
+    &LEVEL_END
 };
 const int TOTAL_LEVELS = sizeof(ALL_LEVELS) / sizeof(ALL_LEVELS[0]);

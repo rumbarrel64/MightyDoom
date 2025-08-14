@@ -82,13 +82,26 @@ void tutorial_loop() {
   player.rotation_y = level->player.rotation_y;
   // Initialize Player
 
-  // Initialize Zombie(s)
+  // Initialize Zombie(s) with delayed spawning
   int zombie_count = level->zombie_count;
   Zombie *zombies = malloc_uncached(sizeof(Zombie) * zombie_count);
+  bool *zombie_spawned = malloc_uncached(sizeof(bool) * zombie_count);
+  float *spawn_banner_timer = malloc_uncached(sizeof(float) * zombie_count);  // ADD THIS - countdown timer
+
+  // Initialize all zombies, but mark delayed ones as not spawned
   for (int i = 0; i < zombie_count; i++) {
       zombie_init(&zombies[i], &level->zombies[i].position);
       zombies[i].rotation_y = level->zombies[i].rotation_y;
-  }
+      
+      if (level->zombies[i].spawn_delay) {
+          zombies[i].alive = false;  // Hide delayed zombies by marking as not alive
+          zombie_spawned[i] = false;
+          spawn_banner_timer[i] = 0.0f;  // No timer until they spawn
+      } else {
+          zombie_spawned[i] = true;  // Normal zombies are spawned immediately
+          spawn_banner_timer[i] = 4.0f;  // 4 second countdown
+      }
+  };
   // Initialize Zombie(s)
 
   // Initilaize Enemy count (Sum off all enemy counts)
@@ -180,6 +193,17 @@ void tutorial_loop() {
           player_update(&player, deltaTime, no_input, no_buttons, zombies, zombie_count);
       };
 
+      // Check for delayed zombie spawning
+      if (player.position.v[2] <= -10.0f) {
+          for (int i = 0; i < zombie_count; i++) {
+              if (!zombie_spawned[i] && level->zombies[i].spawn_delay) {
+                  zombies[i].alive = true;  // Make zombie visible/active
+                  zombie_spawned[i] = true;
+                  spawn_banner_timer[i] = 4.0f;  // Start 4-second countdown
+              }
+          }
+      };
+      
       // Level Switch Logic - Let level_update.c handle everything
       if (level_update(&player, zombies, zombie_count, &enemy_count, &level)) {
           level_timer = get_time_s();
@@ -248,43 +272,49 @@ void tutorial_loop() {
           map_draw(&map);
       };
  
-      // Draw (Banners)
-      for (int i = 0; i < zombie_count; i++) {
+    // Draw (Banners)
+    for (int i = 0; i < zombie_count; i++) {
         
-        // 1. Draw BLOOD banner if zombie is dead
-        if (!zombies[i].alive) {
-
-        float time_since_death = get_time_s() - zombies[i].blood_time;
-
-        // Compute scale: start from (3.0, 0.3), shrink by 0.1 per second
-        zombies[i].blood_scale -= 0.01f * time_since_death;
-
-        // Clamp: If scale reaches zero or below, skip drawing
-        if (zombies[i].blood_scale <= 0.0f) {
-            continue;  // Skip this blood banner
-        };        
-
-          t3d_mat4fp_from_srt_euler(&blood_matrices[i],
-              (float[3]){zombies[i].blood_scale, 0.3f, zombies[i].blood_scale},  // scale: X, Z, Y
-              (float[3]){0, 0, 0},
-              (float[3]){zombies[i].position.v[0], 0, zombies[i].position.v[2]});
-
-          draw_floor_banner(&blood_matrices[i], BANNER_BLOOD);
-      };
-
-        // 2. Draw SPAWN banner (only during first 4 seconds)
-        if (get_time_s() - level_timer < 4.0f) {
-
-          t3d_mat4fp_from_srt_euler(&spawn_matrices[i],
-            (float[3]){0.3f, 0.3f, 0.3f},
-            (float[3]){0, 0, 0},
-            (float[3]){level->zombies[i].position.v[0], 0, level->zombies[i].position.v[2]});
+        // Skip banners for zombies that haven't spawned yet
+        if (level->zombies[i].spawn_delay && !zombie_spawned[i]) {
+            continue;  // Skip unspawned delayed zombies
+        }
+        
+        // 1. Draw BLOOD banner if zombie is dead (but was previously alive)
+        if (!zombies[i].alive && zombie_spawned[i]) {  // Added zombie_spawned[i] check
             
-            draw_floor_banner(&spawn_matrices[i], BANNER_SPAWN);
-          
+            float time_since_death = get_time_s() - zombies[i].blood_time;
+
+            // Compute scale: start from (3.0, 0.3), shrink by 0.1 per second
+            zombies[i].blood_scale -= 0.01f * time_since_death;
+
+            // Clamp: If scale reaches zero or below, skip drawing
+            if (zombies[i].blood_scale <= 0.0f) {
+                continue;  // Skip this blood banner
+            };        
+
+            t3d_mat4fp_from_srt_euler(&blood_matrices[i],
+                (float[3]){zombies[i].blood_scale, 0.3f, zombies[i].blood_scale},  // scale: X, Z, Y
+                (float[3]){0, 0, 0},
+                (float[3]){zombies[i].position.v[0], 0, zombies[i].position.v[2]});
+
+            draw_floor_banner(&blood_matrices[i], BANNER_BLOOD);
         };
 
-      };
+        // 2. Draw SPAWN banner (only during first 4 seconds and only for spawned zombies)
+        if (zombie_spawned[i] && spawn_banner_timer[i] > 0.0f) {  // CHANGED: Use timer countdown
+            
+            t3d_mat4fp_from_srt_euler(&spawn_matrices[i],
+                (float[3]){0.3f, 0.3f, 0.3f},
+                (float[3]){0, 0, 0},
+                (float[3]){level->zombies[i].position.v[0], 0, level->zombies[i].position.v[2]});
+                
+            draw_floor_banner(&spawn_matrices[i], BANNER_SPAWN);
+            
+            spawn_banner_timer[i] -= deltaTime;  // Subtract frame time each frame
+        }
+
+    };
 
       // Draw (Bullets)
       bullet_draw(&bullet);
@@ -390,6 +420,8 @@ void tutorial_loop() {
 
     // Zombie(s) Cleanup
     zombie_destroy_all(zombies, allocated_zombie_count);
+    free_uncached(zombie_spawned);
+    free_uncached(spawn_banner_timer);
 
     // Banner(s) Cleanup
     crack_cleanup(&crack);
