@@ -9,6 +9,7 @@ typedef struct {
     T3DVec3 position;
     float rotation_y;
     T3DVec3 direction;
+    bool active;
 } Bullet;
 
 void bullet_init(Bullet *b);
