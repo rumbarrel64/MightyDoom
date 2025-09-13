@@ -49,8 +49,8 @@ void menu_loop() {
         rdpq_text_printf(&(rdpq_textparms_t){.align = ALIGN_CENTER}, 2, 50, 20, "Mighty Doom 64");
         rdpq_text_printf(NULL, 2, 100, 100, "Tutorial");
         rdpq_text_printf(NULL, 2, 100, 120, "Options");
-        //rdpq_text_printf(NULL, 1, 20, 220, "Mem: %d KiB", heap_stats.used/1024); // get memory usage
         rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, 10, 220, "Mem: %d KiB", heap_stats.used/1024); // get memory usage
+        rdpq_text_printf(NULL, FONT_BUILTIN_DEBUG_MONO, 270, 220, "V0.9.2");
 
         rdpq_detach_show();
 
