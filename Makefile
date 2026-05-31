@@ -1,8 +1,10 @@
 BUILD_DIR=build
-T3D_INST=$(shell realpath ../..)
+# Adjust T3D_INST to point to your Tiny3D directory
+N64_INST=$(shell realpath ../libdragon)
+T3D_INST=$(shell realpath ../tiny3d)
 
 include $(N64_INST)/include/n64.mk
-include $(N64_INST)/include/t3d.mk
+include $(T3D_INST)/t3d.mk
 
 N64_CFLAGS += -std=gnu2x -O2
 

@@ -18,14 +18,15 @@ void player_init(Player *player) {
 
     // Slayer Skeletons for model
     player->skel = t3d_skeleton_create(player->model);
-    player->skel_blend = t3d_skeleton_clone(&player->skel, false);
+    //player->skel_blend = t3d_skeleton_clone(&player->skel, false); new
 
     // Slayer Animations
-    player->anim_idle = t3d_anim_create(player->model, "breathing-idle");
-    t3d_anim_attach(&player->anim_idle, &player->skel);
+    //player->anim_idle = t3d_anim_create(player->model, "breathing-idle");
+    //t3d_anim_attach(&player->anim_idle, &player->skel);
 
     player->anim_walk = t3d_anim_create(player->model, "walking-left");
-    t3d_anim_attach(&player->anim_walk, &player->skel_blend);
+    //t3d_anim_attach(&player->anim_walk, &player->skel_blend); // new
+    t3d_anim_attach(&player->anim_walk, &player->skel);
 
     // Optional: setup attack animation
     // player->anim_attack = t3d_anim_create(model, "attack");
@@ -38,7 +39,7 @@ void player_init(Player *player) {
 void player_draw(Player *player) {
     t3d_mat4fp_from_srt_euler(player->model_matrix,
         // Scale
-        (float[3]){0.0035f, 0.0035f, 0.0035f},
+        (float[3]){0.0029f, 0.0029f, 0.0029f},
         // Rotation
         (float[3]){
                     -4.5f,              // Rotate around the X axis
@@ -184,11 +185,11 @@ void player_update(Player *player, float delta_time, joypad_inputs_t joypad, joy
     player->position.v);
 
     // Animation updates
-    t3d_anim_update(&player->anim_idle, delta_time);
+    //t3d_anim_update(&player->anim_idle, delta_time);
     t3d_anim_set_speed(&player->anim_walk, player->blend_factor + 0.15f);
     t3d_anim_update(&player->anim_walk, delta_time);
 
-    t3d_skeleton_blend(&player->skel, &player->skel, &player->skel_blend, player->blend_factor);
+    //t3d_skeleton_blend(&player->skel, &player->skel, &player->skel_blend, player->blend_factor); new
     t3d_skeleton_update(&player->skel);
 }
 
@@ -197,9 +198,9 @@ void player_update(Player *player, float delta_time, joypad_inputs_t joypad, joy
   {
     // Destroy animations first (they may reference skeletons)
     t3d_skeleton_destroy(&player->skel);
-    t3d_skeleton_destroy(&player->skel_blend);
+    //t3d_skeleton_destroy(&player->skel_blend);
     // Then destroy skeletons
-    t3d_anim_destroy(&player->anim_idle);
+    //t3d_anim_destroy(&player->anim_idle);
     t3d_anim_destroy(&player->anim_walk);
     // Free model matrix
     free_uncached(player->model_matrix);
